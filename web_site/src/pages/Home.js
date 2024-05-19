@@ -1,33 +1,22 @@
-import React from 'react'
-// import logo from '../images/logo-removebg.png'
+import React, { useEffect } from 'react'
 import logo from '../images/theme.svg'
+import { Box, Typography } from '@mui/material'
+import BackgroundImage from '../components/BackgroundImage'
 
 function Home() {
     return (
         <>
-            <div style={{
-                // background: 'red',
-                height: '80vh',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                backgroundImage: `url(${logo})`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center'
-            }} >
-                < h1 style={{ color: 'white' }}>Welcome to the CC software solutions</h1 >
-            </div >
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
+            <section className='section' >
+                <BackgroundImage />
+            </section>
+            <section className='section' style={{ background: 'blue' }}>
+                <h1>helolllo</h1>
+            </section>
+            <section className='section'>
+                <h1>helolllo</h1>
+            </section>
+
+
 
         </>
     )
