@@ -21,7 +21,7 @@ function NavBarComp() {
                 <a href="/about">About Us</a>
                 <a href="/teammembers">Our Team</a>
                 <a href="/service">Service</a>
-                <a href="/contact">Contact Us</a>
+                <a href="/contactus">Contact Us</a>
             </div>
             <div
                 className={`nav-toggle ${isOpen && "open"}`}

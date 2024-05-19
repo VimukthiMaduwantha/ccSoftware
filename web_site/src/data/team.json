@@ -2,55 +2,55 @@
     {
         "mID": "1",
         "name": "Kanishka Kumarasiri",
-        "image": "",
+        "image": "assets/pPic/kuma.jpg",
         "position": "Software Engineer"
     },
     {
         "mID": "2",
         "name": "Vimukthi Maduwantha",
-        "image": "",
+        "image": "assets/pPic/me.jpg",
         "position": "Software Engineer"
     },
     {
         "mID": "3",
         "name": "Pasindu Sankalpa",
-        "image": "",
+        "image": "assets/pPic/sankalpa.PNG",
         "position": "Software Engineer"
     },
     {
         "mID": "4",
         "name": "Kavinda Sandaruwan",
-        "image": "",
+        "image": "assets/pPic/bere.PNG",
         "position": "Software Engineer"
     },
     {
         "mID": "5",
         "name": "Janitha Sudharaka",
-        "image": "",
+        "image": "assets/pPic/janiya.jpg",
         "position": "Data Analyst"
     },
     {
         "mID": "6",
         "name": "Dinuka Sajith",
-        "image": "",
+        "image": "assets/pPic/dinuka.jpg",
         "position": "Software Engineer"
     },
     {
         "mID": "7",
         "name": "Chandula Nanayakkara",
-        "image": "",
+        "image": "assets/pPic/chandula.jpg",
         "position": "UI/UX Engineer"
     },
     {
         "mID": "8",
         "name": "Tharush Senanayake",
-        "image": "",
+        "image": "assets/pPic/tharush.PNG",
         "position": "Network Engineer"
     },
     {
         "mID": "9",
         "name": "Pasindu Deshan",
-        "image": "",
+        "image": "assets/pPic/lokka.jpg",
         "position": "Cyber Security Engineer"
     }
 ]

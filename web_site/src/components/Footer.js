@@ -24,15 +24,6 @@ function Footer() {
             <Box sx={{ height: '100%', background: 'black', padding: '10px' }}>
                 <Grid container spacing={0}>
                     <Grid item md={4} xs={12} >
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} className='no-select'>
-                            <img
-                                src={logo}
-                                height='50px'
-                                width='auto'
-
-                            />
-
-                        </div>
                         <div className='no-select'>
                             <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", /* textAlign: 'justify' */ }}>
                                 CC Software Solutions is a leading software engineering company
@@ -42,8 +33,15 @@ function Footer() {
                             </Typography>
                         </div>
                     </Grid>
-                    <Grid item md={4} xs={12}>
-                        <h1 style={{ color: 'white' }}>hello</h1>
+                    <Grid item md={4} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <div>
+                            <img
+                                src={logo}
+                                height='80px'
+                                width='auto'
+
+                            />
+                        </div>
                     </Grid>
                     <Grid item md={4} xs={12}>
                         <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontSize: '20px' }}>Connect With Us</Typography>
@@ -67,7 +65,6 @@ function Footer() {
                                     <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", opacity: '0.8', }}>ccsoftwaresolutionsltd@gmail.com</Typography>
                                 </div>
                             </div>
-                            <br />
                             <div>
                                 <a href='https://www.facebook.com/profile.php?id=61555503735807' target="_blank">
                                     <FacebookIcon sx={{ color: 'white' }} />

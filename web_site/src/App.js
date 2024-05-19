@@ -6,6 +6,7 @@ import Team from './pages/Team';
 import './styles/Navbar.css'
 import './styles/HuneyComb.css'
 import { Routes, Route } from 'react-router-dom'
+import ContactUs from './pages/ContactUs';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/teammembers' element={<Team />} />
+          <Route exact path='/contactus' element={<ContactUs />} />
         </Routes>
       </div>
       <Footer />

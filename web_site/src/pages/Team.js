@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Card, Grid, Typography } from '@mui/material'
 import back from '../images/team.jpg'
+import back1 from '../images/tm.jpg'
 import HuneyComb from '../components/HuneyComb'
 import teamMembers from '../data/team.json'
 
@@ -47,16 +48,19 @@ function Team() {
                         {teamMembers.map((e, i) => (
                             <Grid item md={3} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <Card sx={{
-                                    width: '300px', height: '400px', transition: 'transform 0.5s', borderRadius: '15px',
+                                    width: '300px', height: '400px', transition: 'transform 0.5s', borderRadius: '15px', background: 'black',
                                     '&:hover': {
                                         transform: 'scale(1.05)', // Enlarge the card on hover
                                         boxShadow: '1px 1px 12px rgba(77, 190, 233, 1)'
                                     },
                                 }} >
                                     <div>
-                                        <h1>heello</h1>
+                                        <img
+                                            src={e.image}
+                                            style={{ width: '300px', height: '350px', aspectRatio: '3/2', objectFit: 'cover' }}
+                                        />
                                     </div>
-                                    <div style={{ background: '#1A1A1A', }}>
+                                    <div >
                                         <center >
                                             <Typography sx={{ color: '#A974D0', fontFamily: "Montserrat, sans-serif", fontWeight: '700' }}>{e.name}</Typography>
                                             <Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", fontWeight: '500' }}>{e.position}</Typography>
@@ -69,6 +73,26 @@ function Team() {
                 </Box>
             </center >
             <br />
+            <center>
+                <Box sx={{
+                    height: { md: '80vh', xs: '50vh' },
+                    backgroundImage: `url(${back1})`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                }}
+                >
+                    <div >
+                        <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '500', fontSize: '80px' }}>Let' Start</Typography>
+                        <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '700', fontSize: '20px' }}>Empowering businesses through custom software solutions. Your success, our code. #CCSoftwareSolutions</Typography>
+                        <br />
+                        <a className="btnContact" href="/contactus">Contact Us</a>
+                    </div>
+                </Box>
+            </center>
         </>
     )
 }
