@@ -40,3 +40,114 @@
         height: 10px;
     }
 }
+
+.contactBtn {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.7em 2.4em;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: #4DBEE9;
+    z-index: 1;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.contactBtn span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 4px solid #4DBEE9;
+}
+
+.contactBtn span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: var(--lightgray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+}
+
+.contactBtn:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: #A974D0;
+}
+
+.contactBtn:hover {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.contactBtn:active span::before {
+    background: #2751cd;
+}
+
+
+
+.inputContact {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: #1A1A1A;
+    width: 80%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    height: 2px;
+    width: 80%;
+    bottom: 0;
+    left: 10%;
+    transform: scaleX(0%);
+    transition: transform 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.inputContact:focus {
+    outline: none;
+}
+
+.inputContact:focus+.input-border {
+    transform: scaleX(100%);
+}
+
+.form-control {
+    position: relative;
+    --width-of-input: 300px;
+}
+
+.input-alt {
+    font-size: 1.2rem;
+    padding-inline: 1em;
+    padding-block: 0.8em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-border-alt {
+    height: 3px;
+    background: linear-gradient(90deg, #ff6464 0%, #ffbf59 50%, #47c9ff 100%);
+    transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.input-alt:focus+.input-border-alt {
+    transform: scaleX(100%);
+}
