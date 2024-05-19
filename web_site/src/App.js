@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Team from './pages/Team';
 import './styles/Navbar.css'
 import './styles/HuneyComb.css'
+import './styles/Contact.css'
 import { Routes, Route } from 'react-router-dom'
 import ContactUs from './pages/ContactUs';
 
