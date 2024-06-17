@@ -6,6 +6,7 @@ import back1 from '../images/tm.jpg'
 import back2 from '../images/huji23.jpg'
 import menu from '../images/n.png'
 import bloommark from '../images/bloommark.png'
+import homeBack from '../images/homeBack.jpg'
 
 
 function Home() {
@@ -17,9 +18,37 @@ function Home() {
             <div>
                 <BackgroundImage />
             </div>
-            <section className='section' style={{ background: 'blue' }}>
+            <section className='section'
+                style={{
+                    backgroundImage: `url(${homeBack})`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                }}
+            >
+                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: "center", height: 'calc(100vh - 80px)', background: 'green' }}>
+                    <div >
+                        <Grid container sx={{ width: '95%' }}>
+                            <Grid item md={4} xs={12} sx={{ height: '10vh', background: 'red', }}>
+                                <h1>Hell</h1>
+                            </Grid>
+                            <Grid item md={8} xs={12} sx={{ height: '10vh', background: 'blue' }}>
+                                <Grid container spacing={2}>
+                                    <Grid item md={4} xs={4}>
 
-            </section>
+                                    </Grid>
+                                    <Grid item md={4} xs={4}>
+
+                                    </Grid>
+                                    <Grid item md={4} xs={4}>
+
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </div>
+                </Box>
+            </section >
             <section className='section' style={{ background: 'red' }}>
 
             </section>
@@ -121,7 +150,7 @@ function Home() {
                             <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '500', fontSize: { md: '80px', xs: '70px' } }}>Let's Start</Typography>
                             <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '700', fontSize: { md: '20px', xs: '16px' } }}>Empowering businesses through custom software solutions. Your success, our code. #CCSoftwareSolutions</Typography>
                             <br />
-                            <a className="btnContact" href="/contactus">Contact Us</a>
+                            <a className="btnContact" href="/contactus">Get In Touch</a>
                         </div>
                     </Box>
                 </center>

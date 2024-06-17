@@ -48,23 +48,21 @@ function Team() {
                         {teamMembers.map((e, i) => (
                             <Grid item md={3} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <Card sx={{
-                                    width: '300px', height: '400px', transition: 'transform 0.5s', borderRadius: '15px', background: 'black',
-                                    '&:hover': {
+                                    width: '300px', height: '400px'/* , transition: 'transform 0.5s' */, borderRadius: '15px', background: 'black',
+                                    /* '&:hover': {
                                         transform: 'scale(1.05)', // Enlarge the card on hover
                                         boxShadow: '1px 1px 12px rgba(77, 190, 233, 1)'
-                                    },
+                                    }, */
                                 }} >
-                                    <div>
+                                    <div style={{ overflow: 'hidden' }}>
                                         <img
                                             src={e.image}
-                                            style={{ width: '300px', height: '350px', aspectRatio: '3/2', objectFit: 'cover' }}
+                                            className='teamImage'
                                         />
                                     </div>
-                                    <div >
-                                        <center >
-                                            <Typography sx={{ color: '#A974D0', fontFamily: "Montserrat, sans-serif", fontWeight: '700' }}>{e.name}</Typography>
-                                            <Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", fontWeight: '500' }}>{e.position}</Typography>
-                                        </center>
+                                    <div>
+                                        <Typography sx={{/*  color: '#A974D0' */color: 'white', opacity: '0.7', fontFamily: "Montserrat, sans-serif", fontWeight: '700' }}>{e.name}</Typography>
+                                        <Typography sx={{ /* color: '#4DBEE9' */color: 'white', opacity: '0.7', fontFamily: "Montserrat, sans-serif", fontWeight: '200', fontSize: '15px' }}>{e.position}</Typography>
                                     </div>
                                 </Card>
                             </Grid>
@@ -73,26 +71,28 @@ function Team() {
                 </Box>
             </center >
             <br />
-            <center>
-                <Box sx={{
-                    height: { md: '80vh', xs: '50vh' },
-                    backgroundImage: `url(${back1})`,
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center'
-                }}
-                >
-                    <div >
-                        <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '500', fontSize: '80px' }}>Let's Start</Typography>
-                        <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '700', fontSize: '20px' }}>Empowering businesses through custom software solutions. Your success, our code. #CCSoftwareSolutions</Typography>
-                        <br />
-                        <a className="btnContact" href="/contactus">Contact Us</a>
-                    </div>
-                </Box>
-            </center>
+            <Box >
+                <center>
+                    <Box sx={{
+                        height: { md: '50vh', xs: '50vh' },
+                        backgroundImage: `url(${back1})`,
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center'
+                    }}
+                    >
+                        <div style={{ padding: '10px' }} >
+                            <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '500', fontSize: { md: '80px', xs: '70px' } }}>Let's Start</Typography>
+                            <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '700', fontSize: { md: '20px', xs: '16px' } }}>Empowering businesses through custom software solutions. Your success, our code. #CCSoftwareSolutions</Typography>
+                            <br />
+                            <a className="btnContact" href="/contactus">Get In Touch</a>
+                        </div>
+                    </Box>
+                </center>
+            </Box>
         </>
     )
 }
