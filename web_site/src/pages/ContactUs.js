@@ -29,9 +29,9 @@ function ContactUs() {
                     paddingLeft: '3vw'
                 }}>
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontSize: { md: '6vw', xs: '40px' } }}>Contact Us</Typography>
+                        <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontSize: { md: '6vw', xs: '40px' } }}>Get in touch</Typography>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <Contact />
+                        {/* <Contact /> */}
                     </div>
                 </Box>
             </Box >
@@ -58,14 +58,15 @@ function ContactUs() {
                             <div>
                                 <Card sx={{ width: { md: '42vw', xs: '90vw' }, height: { md: '35vh', xs: '17vh' }, borderRadius: '20px', boxShadow: '1px 1px 12px rgba(0, 0, 0, 1.5)', background: 'black', padding: '0 5px 0 0' }}>
                                     <Typography sx={{ color: '#D3D3D4', fontFamily: "Montserrat, sans-serif", fontSize: { md: '3vw', xs: '30px' } }}>Hotline</Typography>
-                                    <Typography sx={{ color: '#D3D3D4', fontFamily: "Montserrat, sans-serif", fontSize: { md: '1vw', xs: '15px' } }}>Our hotline is always available, ensuring that you can reach us at any time without experiencing a busy signal. </Typography>
+                                    <Typography sx={{ color: '#D3D3D4', fontFamily: "Montserrat, sans-serif", fontSize: { md: '1vw', xs: '15px' } }}>Transform Your Ideas into Reality – Contact Us Now! </Typography>
                                     <Typography sx={{ color: '#D3D3D4', fontFamily: "Montserrat, sans-serif", fontSize: { md: '3.6vw', xs: '15px' }, fontWeight: 'bold' }}>+94 770 832 340 </Typography>
                                 </Card>
                                 &nbsp;
                                 <Card sx={{ width: { md: '42vw', xs: '90vw' }, height: { md: '35vh', xs: '17vh' }, borderRadius: '20px', boxShadow: '1px 1px 12px rgba(0, 0, 0, 1.5)', background: 'black' }}>
                                     <Typography sx={{ color: '#D3D3D4', fontFamily: "Montserrat, sans-serif", fontSize: { md: '3vw', xs: '30px' } }}>Email Us</Typography>
-                                    <Typography sx={{ color: '#D3D3D4', fontFamily: "Montserrat, sans-serif", fontSize: { md: '1vw', xs: '15px' } }}>Our email inbox is constantly monitored, so you can rest assured that your message will not go unnoticed or overlooked. </Typography>
-                                    <Typography sx={{ color: '#D3D3D4', fontFamily: "Montserrat, sans-serif", fontSize: { md: '2.1vw', xs: '15px' }, fontWeight: 'bold' }}> ccsoftwaresolutionsltd@gmail.com </Typography>
+                                    <Typography sx={{ color: '#D3D3D4', fontFamily: "Montserrat, sans-serif", fontSize: { md: '1vw', xs: '15px' } }}>Success Begins with a Conversation – Let’s Talk! </Typography>
+                                    <br />
+                                    <Typography sx={{ color: '#D3D3D4', fontFamily: "Montserrat, sans-serif", fontSize: { md: '2vw', xs: '15px' }, fontWeight: 'bold' }}><a style={{ textDecoration: 'none', color: 'white' }} href='mailto:info@ccsoftwares.com'>info@ccsoftwares.com</a></Typography>
                                 </Card>
                             </div>
                         </Grid>

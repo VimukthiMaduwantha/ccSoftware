@@ -86,7 +86,7 @@ function Team() {
                 }}
                 >
                     <div >
-                        <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '500', fontSize: '80px' }}>Let' Start</Typography>
+                        <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '500', fontSize: '80px' }}>Let's Start</Typography>
                         <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '700', fontSize: '20px' }}>Empowering businesses through custom software solutions. Your success, our code. #CCSoftwareSolutions</Typography>
                         <br />
                         <a className="btnContact" href="/contactus">Contact Us</a>
