@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
-import logo from '../images/theme.svg'
+// import logo from '../images/theme.svg'
 import back from '../images/original.png'
-// import back from '../images/back.png'
+// import logo from '../images/CCback.jpg'
+import logo from '../images/cccBack.jpg'
 import { Box, Grid, Typography } from '@mui/material'
 
 function BackgroundImage() {
@@ -19,7 +20,8 @@ function BackgroundImage() {
     return (
         <>
             <Box sx={{
-                height: { md: 'calc(100vh - 80px)', xs: '100vh' },
+                height: { md: 'calc(100vh - 80px)', xs: 'auto' },
+                paddingTop: { md: 'none', xs: '2vh' },
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -38,7 +40,7 @@ function BackgroundImage() {
                                     fontSize: { md: '4vw', xs: '7vw' },
                                     textAlign: 'center',
                                     fontWeight: 'bold',
-                                    color: 'black',
+                                    color: 'white',
                                     fontFamily: "Kanit, sans-serif",
                                     fontWeight: '500',
                                     fontStyle: 'normal',
@@ -48,11 +50,11 @@ function BackgroundImage() {
                                 sx={{
                                     paddingLeft: { md: '20px', xs: 'none' },
                                     fontSize: { md: '1.2vw', xs: '3vw' },
-                                    color: 'black',
-                                    fontFamily: "Ubuntu Sans Mono, monospace",
+                                    color: 'white',
+                                    fontFamily: "Montserrat, sans-serif",
                                     fontOpticalSizing: 'auto',
                                     fontStyle: 'normal',
-                                    fontWeight: '500'
+                                    fontWeight: '500',
                                 }}
                             >
                                 CC Software Solutions is your trusted partner for innovative IT product development.

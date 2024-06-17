@@ -23,7 +23,7 @@ function Footer() {
         <>
             <Box sx={{ height: '100%', background: 'black', padding: '10px' }}>
                 <Grid container spacing={0}>
-                    <Grid item md={4} xs={12} >
+                    <Grid item md={4} xs={12}>
                         <div className='no-select'>
                             <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", /* textAlign: 'justify' */ }}>
                                 CC Software Solutions is a leading software engineering company
@@ -49,6 +49,7 @@ function Footer() {
                             <div style={{ display: 'flex', justifyContent: 'start', alignItems: 'center', }}>
                                 <div>
                                     <LocalPhoneIcon sx={{ color: 'white' }} />
+
                                 </div>
                                 &nbsp; &nbsp;
                                 <div>
@@ -62,7 +63,7 @@ function Footer() {
                                 </div>
                                 &nbsp; &nbsp;
                                 <div>
-                                    <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", opacity: '0.8', }}>ccsoftwaresolutionsltd@gmail.com</Typography>
+                                    <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", opacity: '0.8', }}><a style={{ textDecoration: 'none', color: 'white' }} href='mailto:info@ccsoftwares.com'>info@ccsoftwares.com</a></Typography>
                                 </div>
                             </div>
                             <div>
@@ -80,13 +81,10 @@ function Footer() {
                 </Grid>
                 <br />
                 <hr style={{ opacity: '0.5' }} />
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontSize: { md: '13px', xs: '12px' } }}>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", opacity: '0.7', fontSize: { md: '13px', xs: '12px' } }}>
                         ©2024.All Rights Reserved by CC Software Solutions.
                     </Typography>
-                    <Box sx={{ display: 'flex', justifyContent: 'end' }}>
-                        <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontSize: { md: '13px', xs: '12px' } }}>Empowering businesses through custom software solutions. Your success, our code. #CCSoftwareSolutions</Typography>
-                    </Box>
                 </div>
             </Box >
         </>

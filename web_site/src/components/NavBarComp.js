@@ -18,10 +18,10 @@ function NavBarComp() {
 
 
             <div className={`nav-items ${isOpen && "open"}`}>
-                <a href="/about">About Us</a>
+                <a href="/aboutus">About Us</a>
                 <a href="/teammembers">Our Team</a>
                 <a href="/service">Service</a>
-                <a href="/contactus">Contact Us</a>
+                <a href="/contactus">Get In Touch</a>
             </div>
             <div
                 className={`nav-toggle ${isOpen && "open"}`}

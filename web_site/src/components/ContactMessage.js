@@ -13,10 +13,9 @@ function ContactMessage() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log("userData::> ", userData)
         const serviceID = 'service_yhthxh1';
         const templateID = 'template_5r09hqd';
-        const publicKey = 'yGCXG9ikdRtiZS5NP';
+        const publicKey = 'xgtPNGYR-FfV3NSDo';
 
         const templateParams = {
             from_name: userData.name,
