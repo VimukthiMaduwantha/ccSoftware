@@ -1,60 +1,139 @@
 import React, { useEffect } from 'react'
 import logo from '../images/theme.svg'
-import { Box, Grid, Typography } from '@mui/material'
+import { Box, Card, Grid, Typography } from '@mui/material'
 import BackgroundImage from '../components/BackgroundImage'
 import back1 from '../images/tm.jpg'
 import back2 from '../images/huji23.jpg'
 import menu from '../images/n.png'
 import bloommark from '../images/bloommark.png'
 import homeBack from '../images/homeBack.jpg'
+import web from '../images/cloud.png'
 
 
 function Home() {
     return (
         <>
-            {/* <section className='section' >
-                <BackgroundImage />
-            </section> */}
             <div>
                 <BackgroundImage />
             </div>
-            <section className='section'
+            <div className='section'
                 style={{
                     backgroundImage: `url(${homeBack})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
+                    height: '140vh',
+                    display: 'flex',
+                    justifyContent: 'center',
                 }}
             >
-                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: "center", height: 'calc(100vh - 80px)', background: 'green' }}>
-                    <div >
-                        <Grid container sx={{ width: '95%' }}>
-                            <Grid item md={4} xs={12} sx={{ height: '10vh', background: 'red', }}>
-                                <h1>Hell</h1>
-                            </Grid>
-                            <Grid item md={8} xs={12} sx={{ height: '10vh', background: 'blue' }}>
-                                <Grid container spacing={2}>
-                                    <Grid item md={4} xs={4}>
+                <Box sx={{ width: { xs: '90%', md: '80%' }, padding: '10px', /* background: 'red' */ }}>
+                    <center>
+                        <Typography sx={{ fontSize: { md: '3vh', xs: '1.4vh' }, color: 'white', opacity: '0.9' }}>ALL BUSINESS REQUIREMENTS UNDER ONE ROOF</Typography>
+                        <Typography sx={{ fontSize: { md: '5vh', xs: '2.5vh' }, color: 'white', opacity: '0.9' }}>From Product Design To Software Development</Typography>
+                    </center>
+                    <Grid container spacing={2}>
+                        <Grid item md={4} xs={12}>
+                            <Card
+                                sx={{
+                                    // position: "relative",
+                                    // maxWidth: 345,
+                                    borderRadius: 2,
+                                    height: { xs: "200px", md: "360px" },
+                                }}
+                            >
+                                <img
+                                    src={web}
+                                    height='50%'
+                                    width='auto'
+                                    style={{ display: 'flex', justifyContent: 'center' }}
+                                />
 
-                                    </Grid>
-                                    <Grid item md={4} xs={4}>
 
-                                    </Grid>
-                                    <Grid item md={4} xs={4}>
-
-                                    </Grid>
+                                <h2>web development</h2>
+                            </Card>
+                        </Grid>
+                        <Grid item md={8} xs={12}>
+                            <Grid container spacing={2}>
+                                <Grid item md={4} xs={12}>
+                                    <Card
+                                        sx={{
+                                            // position: "relative",
+                                            // maxWidth: 345,
+                                            borderRadius: 2,
+                                            height: { xs: "100px", md: "172px" },
+                                        }}
+                                    >
+                                        <h2>web development</h2>
+                                    </Card>
                                 </Grid>
+                                <Grid item md={4} xs={12}>
+                                    <Card
+                                        sx={{
+                                            // position: "relative",
+                                            // maxWidth: 345,
+                                            borderRadius: 2,
+                                            height: { xs: "100px", md: "172px" },
+                                        }}
+                                    >
+                                        <h2>web development</h2>
+                                    </Card>
+                                </Grid>
+                                <Grid item md={4} xs={12}>
+                                    <Card
+                                        sx={{
+                                            // position: "relative",
+                                            // maxWidth: 345,
+                                            borderRadius: 2,
+                                            height: { xs: "100px", md: "172px" },
+                                        }}
+                                    >
+                                        <h2>web development</h2>
+                                    </Card>
+                                </Grid>
+                                <Grid item md={4} xs={12}>
+                                    <Card
+                                        sx={{
+                                            // position: "relative",
+                                            // maxWidth: 345,
+                                            borderRadius: 2,
+                                            height: { xs: "100px", md: "172px" },
+                                        }}
+                                    >
+                                        <h2>web development</h2>
+                                    </Card>
+                                </Grid>
+                                <Grid item md={4} xs={12}>
+                                    <Card
+                                        sx={{
+                                            // position: "relative",
+                                            // maxWidth: 345,
+                                            borderRadius: 2,
+                                            height: { xs: "100px", md: "172px" },
+                                        }}
+                                    >
+                                        <h2>web development</h2>
+                                    </Card>
+                                </Grid>
+                                <Grid item md={4} xs={12}>
+                                    <Card
+                                        sx={{
+                                            // position: "relative",
+                                            // maxWidth: 345,
+                                            borderRadius: 2,
+                                            height: { xs: "100px", md: "172px" },
+                                        }}
+                                    >
+                                        <h2>web development</h2>
+                                    </Card>
+                                </Grid>
+
                             </Grid>
                         </Grid>
-                    </div>
+                    </Grid>
                 </Box>
-            </section >
-            <section className='section' style={{ background: 'red' }}>
+            </div >
 
-            </section>
-            <section className='section'>
-
-            </section >
             <Box
                 sx={{
                     height: { md: '60vh', xs: '60vh' },
