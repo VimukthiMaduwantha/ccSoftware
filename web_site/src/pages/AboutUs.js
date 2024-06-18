@@ -2,6 +2,7 @@ import React from 'react'
 import back1 from '../images/tm.jpg'
 import { Box, Grid, Typography } from '@mui/material'
 import about from '../images/abouttt.jpg'
+import question from '../images/question.png'
 
 
 function AboutUs() {
@@ -18,7 +19,7 @@ function AboutUs() {
                 className='no-select'
             >
                 <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#A974D0', fontFamily: "Montserrat, sans-serif", opacity: '0.8', }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', }}>About Us</Typography>
+                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#A974D0', fontFamily: "Montserrat, sans-serif", opacity: '0.8', }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', }}>Who Are We</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -28,13 +29,15 @@ function AboutUs() {
                     paddingLeft: '3vw'
                 }}>
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontSize: { md: '6vw', xs: '40px' } }}>About Us</Typography>
+                        <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontSize: { md: '6vw', xs: '40px' } }}>Who Are We</Typography>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {/* <Contact /> */}
                     </div>
                 </Box>
             </Box>
             <br />
+
+
 
 
 
