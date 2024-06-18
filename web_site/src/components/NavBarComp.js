@@ -18,7 +18,7 @@ function NavBarComp() {
 
 
             <div className={`nav-items ${isOpen && "open"}`}>
-                <a href="/aboutus">About Us</a>
+                <a href="/aboutus">Who Are We</a>
                 <a href="/teammembers">Our Team</a>
                 <a href="/service">Service</a>
                 <a href="/contactus">Get In Touch</a>

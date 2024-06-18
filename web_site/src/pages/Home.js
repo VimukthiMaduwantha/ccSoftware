@@ -8,6 +8,11 @@ import menu from '../images/n.png'
 import bloommark from '../images/bloommark.png'
 import homeBack from '../images/homeBack.jpg'
 import web from '../images/cloud.png'
+import react from '../images/react.png'
+import node from '../images/nodeLogo.png'
+import mongoDB from '../images/MongoDB.png'
+import mobile from '../images/mobileLogo.png'
+import dMarketing from '../images/dMarketing.png'
 
 
 function Home() {
@@ -22,7 +27,7 @@ function Home() {
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
-                    height: '140vh',
+                    height: '200vh',
                     display: 'flex',
                     justifyContent: 'center',
                 }}
@@ -36,10 +41,20 @@ function Home() {
                         <Grid item md={4} xs={12}>
                             <Card
                                 sx={{
-                                    // position: "relative",
-                                    // maxWidth: 345,
+                                    padding: { md: '10px', xs: '5px' },
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
                                     borderRadius: 2,
                                     height: { xs: "200px", md: "360px" },
+                                    background: 'rgba(0, 0, 0, 0.5)',
+                                    border: '1px solid black',
+                                    transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
+                                    '&:hover': {
+                                        border: '1px solid #4DBEE9',
+                                        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
+                                    }
                                 }}
                             >
                                 <img
@@ -48,9 +63,9 @@ function Home() {
                                     width='auto'
                                     style={{ display: 'flex', justifyContent: 'center' }}
                                 />
-
-
-                                <h2>web development</h2>
+                                <br />
+                                <h2 style={{ color: 'white', }}>web development</h2>
+                                <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center' }}>Innovative web applications to support your business.</Typography>
                             </Card>
                         </Grid>
                         <Grid item md={8} xs={12}>
@@ -58,78 +73,192 @@ function Home() {
                                 <Grid item md={4} xs={12}>
                                     <Card
                                         sx={{
-                                            // position: "relative",
-                                            // maxWidth: 345,
-                                            borderRadius: 2,
                                             height: { xs: "100px", md: "172px" },
+                                            padding: { md: '10px', xs: '5px' },
+                                            display: 'flex',
+                                            flexDirection: { md: 'column', xs: 'none' },
+                                            alignItems: 'center',
+                                            justifyContent: { md: 'center', xs: 'space-evenly' },
+                                            borderRadius: 2,
+                                            background: 'rgba(0, 0, 0, 0.5)',
+                                            border: '1px solid black',
+                                            transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
+                                            '&:hover': {
+                                                border: '1px solid #4DBEE9',
+                                                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
+                                            }
                                         }}
                                     >
-                                        <h2>web development</h2>
+                                        <img
+                                            src={react}
+                                            height='50%'
+                                            width='auto'
+                                            style={{ display: 'flex', justifyContent: 'center' }}
+                                        />
+                                        <br />
+                                        <h3 style={{ color: 'white', }}>React js</h3>
+                                        <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Interactive JavaScript framework for dynamic, user-centered interfaces.</Typography>
                                     </Card>
                                 </Grid>
                                 <Grid item md={4} xs={12}>
                                     <Card
                                         sx={{
-                                            // position: "relative",
-                                            // maxWidth: 345,
-                                            borderRadius: 2,
                                             height: { xs: "100px", md: "172px" },
+                                            padding: { md: '10px', xs: '5px' },
+                                            display: 'flex',
+                                            flexDirection: { md: 'column', xs: 'none' },
+                                            alignItems: 'center',
+                                            justifyContent: { md: 'center', xs: 'space-evenly' },
+                                            borderRadius: 2,
+                                            background: 'rgba(0, 0, 0, 0.5)',
+                                            border: '1px solid black',
+                                            transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
+                                            '&:hover': {
+                                                border: '1px solid #4DBEE9',
+                                                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
+                                            }
                                         }}
                                     >
-                                        <h2>web development</h2>
+                                        <img
+                                            src={node}
+                                            height='50%'
+                                            width='auto'
+                                            style={{ display: 'flex', justifyContent: 'center' }}
+                                        />
+                                        <br />
+                                        <h3 style={{ color: 'white', }}>Node js</h3>
+                                        <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Modern solution for creating scalable network applications.</Typography>
                                     </Card>
                                 </Grid>
                                 <Grid item md={4} xs={12}>
                                     <Card
                                         sx={{
-                                            // position: "relative",
-                                            // maxWidth: 345,
-                                            borderRadius: 2,
                                             height: { xs: "100px", md: "172px" },
+                                            padding: { md: '10px', xs: '5px' },
+                                            display: 'flex',
+                                            flexDirection: { md: 'column', xs: 'none' },
+                                            alignItems: 'center',
+                                            justifyContent: { md: 'center', xs: 'space-evenly' },
+                                            borderRadius: 2,
+                                            background: 'rgba(0, 0, 0, 0.5)',
+                                            border: '1px solid black',
+                                            transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
+                                            '&:hover': {
+                                                border: '1px solid #4DBEE9',
+                                                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
+                                            }
                                         }}
                                     >
-                                        <h2>web development</h2>
+                                        <img
+                                            src={mongoDB}
+                                            height='50%'
+                                            width='auto'
+                                            style={{ display: 'flex', justifyContent: 'center' }}
+                                        />
+                                        <br />
+                                        <h3 style={{ color: 'white', }}>MongoDB</h3>
+                                        <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Popular NoSQL database known for its flexibility and scalability.</Typography>
                                     </Card>
                                 </Grid>
-                                <Grid item md={4} xs={12}>
-                                    <Card
-                                        sx={{
-                                            // position: "relative",
-                                            // maxWidth: 345,
-                                            borderRadius: 2,
-                                            height: { xs: "100px", md: "172px" },
-                                        }}
-                                    >
-                                        <h2>web development</h2>
-                                    </Card>
-                                </Grid>
-                                <Grid item md={4} xs={12}>
-                                    <Card
-                                        sx={{
-                                            // position: "relative",
-                                            // maxWidth: 345,
-                                            borderRadius: 2,
-                                            height: { xs: "100px", md: "172px" },
-                                        }}
-                                    >
-                                        <h2>web development</h2>
-                                    </Card>
-                                </Grid>
-                                <Grid item md={4} xs={12}>
-                                    <Card
-                                        sx={{
-                                            // position: "relative",
-                                            // maxWidth: 345,
-                                            borderRadius: 2,
-                                            height: { xs: "100px", md: "172px" },
-                                        }}
-                                    >
-                                        <h2>web development</h2>
-                                    </Card>
-                                </Grid>
-
                             </Grid>
                         </Grid>
+                    </Grid>
+                    <br /> <br />
+                    <Grid container spacing={2}>
+                        <Grid item md={4} xs={12}
+                            sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}
+                        >
+                            <Card
+                                sx={{
+                                    padding: { md: '10px', xs: '5px' },
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    borderRadius: 2,
+                                    height: { xs: "200px", md: "220px" },
+                                    background: 'rgba(0, 0, 0, 0.5)',
+                                    border: '1px solid black',
+                                    transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
+                                    '&:hover': {
+                                        border: '1px solid #4DBEE9',
+                                        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
+                                    }
+                                }}
+                            >
+                                <img
+                                    src={mobile}
+                                    height='50%'
+                                    width='auto'
+                                    style={{ display: 'flex', justifyContent: 'center' }}
+                                />
+                                <h3 style={{ color: 'white', }}>Mobile Development</h3>
+                                <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, }}>scalability, performance, and cost optimization thanks to resilient software architecture.</Typography>
+                            </Card>
+                        </Grid>
+                        <Grid item md={4} xs={12}
+                            sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}
+                        >
+                            <Card
+                                sx={{
+                                    padding: { md: '10px', xs: '5px' },
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    borderRadius: 2,
+                                    height: { xs: "200px", md: "250px" },
+                                    background: 'rgba(0, 0, 0, 0.5)',
+                                    border: '1px solid black',
+                                    transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
+                                    '&:hover': {
+                                        border: '1px solid #4DBEE9',
+                                        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
+                                    }
+                                }}
+                            >
+                                <img
+                                    src={dMarketing}
+                                    height='50%'
+                                    width='auto'
+                                    style={{ display: 'flex', justifyContent: 'center' }}
+                                />
+                                <h3 style={{ color: 'white', }}>Digital Marketing</h3>
+                                <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, }}>Innovative digital strategies to propel your business forward.</Typography>
+                            </Card>
+                        </Grid>
+                        <Grid item md={4} xs={12}
+                            sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}
+                        >
+                            <Card
+                                sx={{
+                                    padding: { md: '10px', xs: '5px' },
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    borderRadius: 2,
+                                    height: { xs: "200px", md: "220px" },
+                                    background: 'rgba(0, 0, 0, 0.5)',
+                                    border: '1px solid black',
+                                    transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
+                                    '&:hover': {
+                                        border: '1px solid #4DBEE9',
+                                        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
+                                    }
+                                }}
+                            >
+                                <img
+                                    src={mobile}
+                                    height='50%'
+                                    width='auto'
+                                    style={{ display: 'flex', justifyContent: 'center' }}
+                                />
+                                <h3 style={{ color: 'white', }}>Digital Product Design</h3>
+                                <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' } }}>scalability, performance, and cost optimization thanks to resilient software architecture.</Typography>
+                            </Card>
+                        </Grid>
+
                     </Grid>
                 </Box>
             </div >
