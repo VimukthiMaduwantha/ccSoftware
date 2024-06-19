@@ -27,11 +27,12 @@ function Home() {
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
-                    height: '200vh',
+                    height: '100%',
                     display: 'flex',
                     justifyContent: 'center',
                 }}
             >
+                {/* Development technologies start */}
                 <Box sx={{ width: { xs: '90%', md: '80%' }, padding: '10px', /* background: 'red' */ }}>
                     <center>
                         <Typography sx={{ fontSize: { md: '3vh', xs: '1.4vh' }, color: 'white', opacity: '0.9' }}>ALL BUSINESS REQUIREMENTS UNDER ONE ROOF</Typography>
@@ -183,7 +184,8 @@ function Home() {
                                     '&:hover': {
                                         border: '1px solid #4DBEE9',
                                         boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
-                                    }
+                                    },
+                                    width: '100%'
                                 }}
                             >
                                 <img
@@ -193,7 +195,7 @@ function Home() {
                                     style={{ display: 'flex', justifyContent: 'center' }}
                                 />
                                 <h3 style={{ color: 'white', }}>Mobile Development</h3>
-                                <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, }}>scalability, performance, and cost optimization thanks to resilient software architecture.</Typography>
+                                <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, }}>Scalability, performance, and cost optimization thanks to resilient software architecture.</Typography>
                             </Card>
                         </Grid>
                         <Grid item md={4} xs={12}
@@ -214,7 +216,8 @@ function Home() {
                                     '&:hover': {
                                         border: '1px solid #4DBEE9',
                                         boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
-                                    }
+                                    },
+                                    width: '100%'
                                 }}
                             >
                                 <img
@@ -245,7 +248,8 @@ function Home() {
                                     '&:hover': {
                                         border: '1px solid #4DBEE9',
                                         boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
-                                    }
+                                    },
+                                    width: '100%'
                                 }}
                             >
                                 <img
@@ -255,27 +259,79 @@ function Home() {
                                     style={{ display: 'flex', justifyContent: 'center' }}
                                 />
                                 <h3 style={{ color: 'white', }}>Digital Product Design</h3>
-                                <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' } }}>scalability, performance, and cost optimization thanks to resilient software architecture.</Typography>
+                                <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' } }}>Complete digital creation – from UX prototyping to impactful final UI designs.</Typography>
                             </Card>
                         </Grid>
-
                     </Grid>
                 </Box>
+                {/* Technological stack end */}
             </div >
+            <br />
+            {/* features stack start */}
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+            }} >
+                <Box sx={{ width: { xs: '97%', md: '80%' }, padding: '10px', /* background: 'red' */ }}>
+                    <center>
+                        <Typography sx={{ fontSize: { md: '3vh', xs: '1.4vh' }, color: 'white', opacity: '0.9' }}>BUILD YOUR DREAM INTO REALITY</Typography>
+                        <Typography sx={{ fontSize: { md: '5vh', xs: '2.5vh' }, color: 'white', opacity: '0.9' }}>How We Manage Your Aspiring Projects</Typography>
+                    </center>
+                    <Grid container spacing={2} /* sx={{ background: 'red' }} */>
+                        <Grid item md={5} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <img
+                                src={mobile}
+                                height='50%'
+                                width='auto'
+                            />
+                        </Grid>
+                        <Grid sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} item md={7} xs={12}>
+                            <Box /* sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} */>
+                                <center>
+                                    <h1 style={{ color: 'white', opacity: '0.9' }}>Organizing Your Business Needs</h1>
+                                    <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'white', opacity: '0.9' }}>We are attentive to every possible detail about your business, and we analyze it carefully to understand your business requirements to deliver the best result.</Typography>
+                                </center>
+                                <br />
+                                <center>
+                                    <h1 style={{ color: 'white', opacity: '0.9' }}>Conducting Tests & Overseeing</h1>
+                                    <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'white', opacity: '0.9' }}>We run multiple tests to assure the product’s quality and keep an informed report to measure the progress.</Typography>
+                                </center>
+                                <br />
+                                <center>
+                                    <h1 style={{ color: 'white', opacity: '0.9' }}>Ready To Go Live</h1>
+                                    <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'white', opacity: '0.9' }}>Since the launch of your project, we constantly check for any bugs or issues and provide services and maintenance to make sure the project works smoothly.</Typography>
+                                </center>
+                            </Box>
+                        </Grid>
+                    </Grid>
+                </Box>
+            </div>
+            {/* features stack end */}
 
+            {/* Client details start */}
             <Box
                 sx={{
-                    height: { md: '60vh', xs: '60vh' },
+                    height: '100%',
                     backgroundImage: `url(${back2})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                     display: 'flex',
                     justifyContent: 'center',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    flexDirection: 'column',
                 }}
             >
-                <Box sx={{ width: '90vw' }}>
+                <div style={{ width: '70%', display: 'flex', jtifyContent: 'center', alignItems: 'center', flexDirection: 'column', }}>
+                    <h1 style={{ color: 'white', opacity: '0.9', textAlign: 'center' }}>Our Truly Amazing Clients</h1>
+                    <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'white', opacity: '0.9', textAlign: 'center', }}>
+                        CC Software Solutions is proud to be associated with esteemed and prestigious clientele.
+                        We promise to best represent our clients and exceed their expectations in every way possible.
+                        Our top priority is meeting all the requirements of our amazing clients, who motivate us everyday.
+                    </Typography>
+                </div>
+
+                {/* <Box sx={{ width: '90vw' }}>
                     <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '500', fontSize: '30px' }}>Our Valued Clients..</Typography>
                     <br />
                     <Grid container spacing={1}>
@@ -339,8 +395,12 @@ function Home() {
                             </Box>
                         </Grid>
                     </Grid>
-                </Box>
+                </Box> */}
             </Box >
+            {/* Client details end */}
+
+
+            {/* contact us start */}
             <Box >
                 <center>
                     <Box sx={{
@@ -363,6 +423,7 @@ function Home() {
                     </Box>
                 </center>
             </Box>
+            {/* contact us end */}
         </>
     )
 }
