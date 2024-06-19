@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Card, Grid, Typography } from '@mui/material'
-import back from '../images/conatct.jpg'
+// import back from '../images/conatct.jpg'
+import back from '../images/whiteDark.jpg'
 import Contact from '../components/Contact'
 import ContactMessage from '../components/ContactMessage'
 
@@ -29,7 +30,7 @@ function ContactUs() {
                     paddingLeft: '3vw'
                 }}>
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontSize: { md: '6vw', xs: '40px' } }}>Get in touch</Typography>
+                        <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontSize: { md: '6vw', xs: '40px' } }}>Get in touch</Typography>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {/* <Contact /> */}
                     </div>
@@ -38,7 +39,8 @@ function ContactUs() {
             <br />
             <Box>
                 <div style={{ padding: '20px', display: 'flex', justifyContent: 'center' }}>
-                    <Typography sx={{ color: '#D3D3D4', fontFamily: "Montserrat, sans-serif", fontSize: { md: '17px', xs: '15px' }, fontWeight: '500' }}>-Reach out to our dedicated team of engineers who are ready to assist you with your software development needs-</Typography>
+                    <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontSize: { md: '17px', xs: '15px' }, fontWeight: '500' }}>-Get in touch with our experts for accurate project estimations,intelligent
+                        business decisions, and best-in-class digital outcomes.-</Typography>
                 </div>
             </Box>
             <br />

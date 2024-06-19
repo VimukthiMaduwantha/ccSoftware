@@ -2,7 +2,9 @@ import React, { useEffect } from 'react'
 // import logo from '../images/theme.svg'
 import back from '../images/original.png'
 // import logo from '../images/CCback.jpg'
-import logo from '../images/cccBack.jpg'
+import logo from '../images/redBack.jpg'
+// import logo from '../images/whiteBack.jpg'
+// import logo from '../images/cccBack.jpg'
 import { Box, Grid, Typography } from '@mui/material'
 
 function BackgroundImage() {
@@ -22,6 +24,7 @@ function BackgroundImage() {
             <Box sx={{
                 height: { md: 'calc(100vh - 80px)', xs: 'auto' },
                 paddingTop: { md: 'none', xs: '2vh' },
+                paddingBottom: { md: 'none', xs: '2vh' },
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -29,6 +32,7 @@ function BackgroundImage() {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
+                borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3))',
             }}
                 className='no-select'
             >
@@ -40,7 +44,7 @@ function BackgroundImage() {
                                     fontSize: { md: '4vw', xs: '7vw' },
                                     textAlign: 'center',
                                     fontWeight: 'bold',
-                                    color: 'white',
+                                    color: 'black',
                                     fontFamily: "Kanit, sans-serif",
                                     fontWeight: '500',
                                     fontStyle: 'normal',
@@ -50,7 +54,7 @@ function BackgroundImage() {
                                 sx={{
                                     paddingLeft: { md: '20px', xs: 'none' },
                                     fontSize: { md: '1.2vw', xs: '3vw' },
-                                    color: 'white',
+                                    color: 'black',
                                     fontFamily: "Montserrat, sans-serif",
                                     fontOpticalSizing: 'auto',
                                     fontStyle: 'normal',
@@ -64,18 +68,11 @@ function BackgroundImage() {
                             </Typography>
                             <br />
                             <div className='btn-container'>
-                                <button className="btn"><i className="animation"></i>Read More About Us<i className="animation"></i></button>
+                                <button className="btn"><i className="animation"></i><a href='/aboutus' style={{ fontFamily: "Montserrat, sans-serif", textDecoration: 'none', color: 'black', cursor: 'pointer' }}>Read More About Us</a><i className="animation"></i></button>
                             </div>
                         </div>
                     </Grid>
-                    <Grid item md={6} xs={12}  >
-                        <img
-                            src={back}
-                            width='100%'
-                        // style={{ aspectRatio: '3/2', objectFit: 'contain' }}
-
-                        />
-                    </Grid>
+                    <br />
                 </Grid>
             </Box >
         </>
