@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Card, Grid, Typography } from '@mui/material'
-import back from '../images/team.jpg'
+import back from '../images/teamNew.jpg'
+// import back from '../images/team.jpg'
 import back1 from '../images/tm.jpg'
 import HuneyComb from '../components/HuneyComb'
 import teamMembers from '../data/team.json'
@@ -14,12 +15,13 @@ function Team() {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
+                borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3))',
 
             }}
                 className='no-select'
             >
                 <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#A974D0', fontFamily: "Montserrat, sans-serif", opacity: '0.8', }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', }}>Our Team</Typography>
+                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#A974D0', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Our Team</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -29,7 +31,7 @@ function Team() {
                     paddingLeft: '3vw'
                 }}>
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontSize: { md: '6vw', xs: '60px' } }}>Our Team</Typography>
+                        <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontSize: { md: '6vw', xs: '40px' }, }}>Our Team</Typography>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <HuneyComb />
                     </div>
@@ -37,8 +39,8 @@ function Team() {
             </Box >
             <Box>
                 <div style={{ padding: '20px' }}>
-                    <Typography sx={{ color: '#A974D0', fontFamily: "Montserrat, sans-serif", fontSize: { md: '17px', xs: '15px' }, fontWeight: '400' }}>Experience. Talent. Unity.</Typography>
-                    <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontSize: { md: '52px', xs: '15px' } }}>Meet the experties in the industry</Typography>
+                    <Typography sx={{ color: '#A974D0', fontFamily: "Montserrat, sans-serif", fontSize: { md: '17px', xs: '15px' }, fontWeight: '600' }}>Experience. Talent. Unity.</Typography>
+                    <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontSize: { md: '52px', xs: '15px' } }}>Meet the experties in the industry</Typography>
                 </div>
             </Box>
 

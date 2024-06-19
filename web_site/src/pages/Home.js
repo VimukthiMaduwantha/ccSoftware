@@ -3,16 +3,21 @@ import logo from '../images/theme.svg'
 import { Box, Card, Grid, Typography } from '@mui/material'
 import BackgroundImage from '../components/BackgroundImage'
 import back1 from '../images/tm.jpg'
-import back2 from '../images/huji23.jpg'
+import back2 from '../images/whiteBack.jpg'
+// import back2 from '../images/huji23.jpg'
 import menu from '../images/n.png'
 import bloommark from '../images/bloommark.png'
-import homeBack from '../images/homeBack.jpg'
+// import homeBack from '../images/whiteDark.jpg'
+import homeBack from '../images/white-cube.jpg'
+// import homeBack from '../images/homeBack.jpg'
 import web from '../images/cloud.png'
 import react from '../images/react.png'
 import node from '../images/nodeLogo.png'
 import mongoDB from '../images/MongoDB.png'
 import mobile from '../images/mobileLogo.png'
+import ui from '../images/ui.png'
 import dMarketing from '../images/dMarketing.png'
+import Marquee from 'react-fast-marquee'
 
 
 function Home() {
@@ -23,7 +28,7 @@ function Home() {
             </div>
             <div className='section'
                 style={{
-                    backgroundImage: `url(${homeBack})`,
+                    // backgroundImage: `url(${homeBack})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
@@ -35,9 +40,10 @@ function Home() {
                 {/* Development technologies start */}
                 <Box sx={{ width: { xs: '90%', md: '80%' }, padding: '10px', /* background: 'red' */ }}>
                     <center>
-                        <Typography sx={{ fontSize: { md: '3vh', xs: '1.4vh' }, color: 'white', opacity: '0.9' }}>ALL BUSINESS REQUIREMENTS UNDER ONE ROOF</Typography>
-                        <Typography sx={{ fontSize: { md: '5vh', xs: '2.5vh' }, color: 'white', opacity: '0.9' }}>From Product Design To Software Development</Typography>
+                        <Typography sx={{ fontSize: { md: '3vh', xs: '1.4vh' }, color: 'black', fontFamily: 'Montserrat, sans-serif', }}>ALL BUSINESS REQUIREMENTS UNDER ONE ROOF</Typography>
+                        <Typography sx={{ fontSize: { md: '5vh', xs: '2.5vh' }, color: 'black', opacity: '0.9', fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold' }}>From Product Design To Software Development</Typography>
                     </center>
+                    <br />
                     <Grid container spacing={2}>
                         <Grid item md={4} xs={12}>
                             <Card
@@ -49,13 +55,7 @@ function Home() {
                                     justifyContent: 'center',
                                     borderRadius: 2,
                                     height: { xs: "200px", md: "360px" },
-                                    background: 'rgba(0, 0, 0, 0.5)',
-                                    border: '1px solid black',
-                                    transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
-                                    '&:hover': {
-                                        border: '1px solid #4DBEE9',
-                                        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
-                                    }
+                                    transition: 'transform 0.3s, border 1s, box-shadow 0.3s',
                                 }}
                             >
                                 <img
@@ -63,10 +63,11 @@ function Home() {
                                     height='50%'
                                     width='auto'
                                     style={{ display: 'flex', justifyContent: 'center' }}
+                                    alt='webDevelopment'
                                 />
                                 <br />
-                                <h2 style={{ color: 'white', }}>web development</h2>
-                                <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center' }}>Innovative web applications to support your business.</Typography>
+                                <h2 style={{ color: 'black', }}>web development</h2>
+                                <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center' }}>Innovative web applications to support your business.</Typography>
                             </Card>
                         </Grid>
                         <Grid item md={8} xs={12}>
@@ -81,13 +82,8 @@ function Home() {
                                             alignItems: 'center',
                                             justifyContent: { md: 'center', xs: 'space-evenly' },
                                             borderRadius: 2,
-                                            background: 'rgba(0, 0, 0, 0.5)',
-                                            border: '1px solid black',
                                             transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
-                                            '&:hover': {
-                                                border: '1px solid #4DBEE9',
-                                                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
-                                            }
+
                                         }}
                                     >
                                         <img
@@ -95,10 +91,11 @@ function Home() {
                                             height='50%'
                                             width='auto'
                                             style={{ display: 'flex', justifyContent: 'center' }}
+                                            alt='reactJS'
                                         />
                                         <br />
-                                        <h3 style={{ color: 'white', }}>React js</h3>
-                                        <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Interactive JavaScript framework for dynamic, user-centered interfaces.</Typography>
+                                        <h3 style={{ color: 'black', }}>React js</h3>
+                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Interactive JavaScript framework for dynamic, user-centered interfaces.</Typography>
                                     </Card>
                                 </Grid>
                                 <Grid item md={4} xs={12}>
@@ -111,13 +108,8 @@ function Home() {
                                             alignItems: 'center',
                                             justifyContent: { md: 'center', xs: 'space-evenly' },
                                             borderRadius: 2,
-                                            background: 'rgba(0, 0, 0, 0.5)',
-                                            border: '1px solid black',
                                             transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
-                                            '&:hover': {
-                                                border: '1px solid #4DBEE9',
-                                                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
-                                            }
+
                                         }}
                                     >
                                         <img
@@ -125,10 +117,11 @@ function Home() {
                                             height='50%'
                                             width='auto'
                                             style={{ display: 'flex', justifyContent: 'center' }}
+                                            alt='nodeJS'
                                         />
                                         <br />
-                                        <h3 style={{ color: 'white', }}>Node js</h3>
-                                        <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Modern solution for creating scalable network applications.</Typography>
+                                        <h3 style={{ color: 'black', }}>Node js</h3>
+                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Modern solution for creating scalable network applications.</Typography>
                                     </Card>
                                 </Grid>
                                 <Grid item md={4} xs={12}>
@@ -141,13 +134,8 @@ function Home() {
                                             alignItems: 'center',
                                             justifyContent: { md: 'center', xs: 'space-evenly' },
                                             borderRadius: 2,
-                                            background: 'rgba(0, 0, 0, 0.5)',
-                                            border: '1px solid black',
                                             transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
-                                            '&:hover': {
-                                                border: '1px solid #4DBEE9',
-                                                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
-                                            }
+
                                         }}
                                     >
                                         <img
@@ -155,10 +143,89 @@ function Home() {
                                             height='50%'
                                             width='auto'
                                             style={{ display: 'flex', justifyContent: 'center' }}
+                                            alt='mongoDB'
                                         />
                                         <br />
-                                        <h3 style={{ color: 'white', }}>MongoDB</h3>
-                                        <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Popular NoSQL database known for its flexibility and scalability.</Typography>
+                                        <h3 style={{ color: 'black', }}>MongoDB</h3>
+                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Popular NoSQL database known for its flexibility and scalability.</Typography>
+                                    </Card>
+                                </Grid>
+                                <Grid item md={4} xs={12}>
+                                    <Card
+                                        sx={{
+                                            height: { xs: "100px", md: "172px" },
+                                            padding: { md: '10px', xs: '5px' },
+                                            display: 'flex',
+                                            flexDirection: { md: 'column', xs: 'none' },
+                                            alignItems: 'center',
+                                            justifyContent: { md: 'center', xs: 'space-evenly' },
+                                            borderRadius: 2,
+                                            transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
+
+                                        }}
+                                    >
+                                        <img
+                                            src={mongoDB}
+                                            height='50%'
+                                            width='auto'
+                                            style={{ display: 'flex', justifyContent: 'center' }}
+                                            alt='mongoDB'
+                                        />
+                                        <br />
+                                        <h3 style={{ color: 'black', }}>MongoDB</h3>
+                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Popular NoSQL database known for its flexibility and scalability.</Typography>
+                                    </Card>
+                                </Grid>
+                                <Grid item md={4} xs={12}>
+                                    <Card
+                                        sx={{
+                                            height: { xs: "100px", md: "172px" },
+                                            padding: { md: '10px', xs: '5px' },
+                                            display: 'flex',
+                                            flexDirection: { md: 'column', xs: 'none' },
+                                            alignItems: 'center',
+                                            justifyContent: { md: 'center', xs: 'space-evenly' },
+                                            borderRadius: 2,
+                                            transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
+
+                                        }}
+                                    >
+                                        <img
+                                            src={mongoDB}
+                                            height='50%'
+                                            width='auto'
+                                            style={{ display: 'flex', justifyContent: 'center' }}
+                                            alt='mongoDB'
+                                        />
+                                        <br />
+                                        <h3 style={{ color: 'black', }}>MongoDB</h3>
+                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Popular NoSQL database known for its flexibility and scalability.</Typography>
+                                    </Card>
+                                </Grid>
+                                <Grid item md={4} xs={12}>
+                                    <Card
+                                        sx={{
+                                            height: { xs: "100px", md: "172px" },
+                                            padding: { md: '10px', xs: '5px' },
+                                            display: 'flex',
+                                            flexDirection: { md: 'column', xs: 'none' },
+                                            alignItems: 'center',
+                                            justifyContent: { md: 'center', xs: 'space-evenly' },
+                                            borderRadius: 2,
+                                            transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
+
+                                        }}
+                                    >
+                                        <img
+                                            src={mongoDB}
+                                            height='50%'
+                                            width='auto'
+                                            style={{ display: 'flex', justifyContent: 'center' }}
+                                            alt='mongoDB'
+                                        />
+                                        <br />
+                                        <h3 style={{ color: 'black', }}>MongoDB</h3>
+                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Popular NoSQL database known for its flexibility and scalability.</Typography>
                                     </Card>
                                 </Grid>
                             </Grid>
@@ -178,13 +245,7 @@ function Home() {
                                     justifyContent: 'center',
                                     borderRadius: 2,
                                     height: { xs: "200px", md: "220px" },
-                                    background: 'rgba(0, 0, 0, 0.5)',
-                                    border: '1px solid black',
-                                    transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
-                                    '&:hover': {
-                                        border: '1px solid #4DBEE9',
-                                        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
-                                    },
+                                    transition: 'transform 0.3s, border 1s, box-shadow 0.3s',
                                     width: '100%'
                                 }}
                             >
@@ -193,9 +254,10 @@ function Home() {
                                     height='50%'
                                     width='auto'
                                     style={{ display: 'flex', justifyContent: 'center' }}
+                                    alt='mongoDB'
                                 />
-                                <h3 style={{ color: 'white', }}>Mobile Development</h3>
-                                <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, }}>Scalability, performance, and cost optimization thanks to resilient software architecture.</Typography>
+                                <h3 style={{ color: 'black', }}>Mobile Development</h3>
+                                <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, }}>Scalability, performance, and cost optimization thanks to resilient software architecture.</Typography>
                             </Card>
                         </Grid>
                         <Grid item md={4} xs={12}
@@ -210,13 +272,7 @@ function Home() {
                                     justifyContent: 'center',
                                     borderRadius: 2,
                                     height: { xs: "200px", md: "250px" },
-                                    background: 'rgba(0, 0, 0, 0.5)',
-                                    border: '1px solid black',
-                                    transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
-                                    '&:hover': {
-                                        border: '1px solid #4DBEE9',
-                                        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
-                                    },
+                                    transition: 'transform 0.3s, border 1s, box-shadow 0.3s',
                                     width: '100%'
                                 }}
                             >
@@ -225,9 +281,10 @@ function Home() {
                                     height='50%'
                                     width='auto'
                                     style={{ display: 'flex', justifyContent: 'center' }}
+                                    alt='DMarketing'
                                 />
-                                <h3 style={{ color: 'white', }}>Digital Marketing</h3>
-                                <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, }}>Innovative digital strategies to propel your business forward.</Typography>
+                                <h3 style={{ color: 'black', }}>Digital Marketing</h3>
+                                <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, }}>Innovative digital strategies to propel your business forward.</Typography>
                             </Card>
                         </Grid>
                         <Grid item md={4} xs={12}
@@ -242,24 +299,19 @@ function Home() {
                                     justifyContent: 'center',
                                     borderRadius: 2,
                                     height: { xs: "200px", md: "220px" },
-                                    background: 'rgba(0, 0, 0, 0.5)',
-                                    border: '1px solid black',
-                                    transition: 'transform 0.3s, border 1s, box-shadow 0.3s', // Add box-shadow transition
-                                    '&:hover': {
-                                        border: '1px solid #4DBEE9',
-                                        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Add shadow effect
-                                    },
+                                    transition: 'transform 0.3s, border 1s, box-shadow 0.3s',
                                     width: '100%'
                                 }}
                             >
                                 <img
-                                    src={mobile}
+                                    src={ui}
                                     height='50%'
                                     width='auto'
                                     style={{ display: 'flex', justifyContent: 'center' }}
+                                    alt='productDesign'
                                 />
-                                <h3 style={{ color: 'white', }}>Digital Product Design</h3>
-                                <Typography sx={{ color: 'white', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' } }}>Complete digital creation – from UX prototyping to impactful final UI designs.</Typography>
+                                <h3 style={{ color: 'black', }}>Digital Product Design</h3>
+                                <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' } }}>Complete digital creation – from UX prototyping to impactful final UI designs.</Typography>
                             </Card>
                         </Grid>
                     </Grid>
@@ -267,15 +319,21 @@ function Home() {
                 {/* Technological stack end */}
             </div >
             <br />
-            {/* features stack start */}
+
             <div style={{
+                // backgroundImage: `url(${homeBack})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                height: '100%',
                 display: 'flex',
                 justifyContent: 'center',
+                // borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))',
             }} >
                 <Box sx={{ width: { xs: '97%', md: '80%' }, padding: '10px', /* background: 'red' */ }}>
                     <center>
-                        <Typography sx={{ fontSize: { md: '3vh', xs: '1.4vh' }, color: 'white', opacity: '0.9' }}>BUILD YOUR DREAM INTO REALITY</Typography>
-                        <Typography sx={{ fontSize: { md: '5vh', xs: '2.5vh' }, color: 'white', opacity: '0.9' }}>How We Manage Your Aspiring Projects</Typography>
+                        <Typography sx={{ fontSize: { md: '3vh', xs: '1.4vh' }, color: 'black', opacity: '0.9', fontFamily: 'Montserrat, sans-serif', }}>BUILD YOUR DREAM INTO REALITY</Typography>
+                        <Typography sx={{ fontSize: { md: '5vh', xs: '2.5vh' }, color: 'black', opacity: '0.9', fontWeight: 'bold', fontFamily: 'Montserrat, sans-serif', }}>How We Manage Your Aspiring Projects</Typography>
                     </center>
                     <Grid container spacing={2} /* sx={{ background: 'red' }} */>
                         <Grid item md={5} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -283,23 +341,24 @@ function Home() {
                                 src={mobile}
                                 height='50%'
                                 width='auto'
+                                alt='service'
                             />
                         </Grid>
                         <Grid sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} item md={7} xs={12}>
                             <Box /* sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} */>
                                 <center>
-                                    <h1 style={{ color: 'white', opacity: '0.9' }}>Organizing Your Business Needs</h1>
-                                    <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'white', opacity: '0.9' }}>We are attentive to every possible detail about your business, and we analyze it carefully to understand your business requirements to deliver the best result.</Typography>
+                                    <h1 style={{ color: 'black', opacity: '0.9' }}>Organizing Your Business Needs</h1>
+                                    <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', opacity: '0.9' }}>We are attentive to every possible detail about your business, and we analyze it carefully to understand your business requirements to deliver the best result.</Typography>
                                 </center>
                                 <br />
                                 <center>
-                                    <h1 style={{ color: 'white', opacity: '0.9' }}>Conducting Tests & Overseeing</h1>
-                                    <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'white', opacity: '0.9' }}>We run multiple tests to assure the product’s quality and keep an informed report to measure the progress.</Typography>
+                                    <h1 style={{ color: 'black', opacity: '0.9' }}>Conducting Tests & Overseeing</h1>
+                                    <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', opacity: '0.9' }}>We run multiple tests to assure the product’s quality and keep an informed report to measure the progress.</Typography>
                                 </center>
                                 <br />
                                 <center>
-                                    <h1 style={{ color: 'white', opacity: '0.9' }}>Ready To Go Live</h1>
-                                    <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'white', opacity: '0.9' }}>Since the launch of your project, we constantly check for any bugs or issues and provide services and maintenance to make sure the project works smoothly.</Typography>
+                                    <h1 style={{ color: 'black', opacity: '0.9' }}>Ready To Go Live</h1>
+                                    <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', opacity: '0.9' }}>Since the launch of your project, we constantly check for any bugs or issues and provide services and maintenance to make sure the project works smoothly.</Typography>
                                 </center>
                             </Box>
                         </Grid>
@@ -320,85 +379,41 @@ function Home() {
                     justifyContent: 'center',
                     alignItems: 'center',
                     flexDirection: 'column',
+                    borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3))',
+                    padding: '20px'
                 }}
             >
                 <div style={{ width: '70%', display: 'flex', jtifyContent: 'center', alignItems: 'center', flexDirection: 'column', }}>
-                    <h1 style={{ color: 'white', opacity: '0.9', textAlign: 'center' }}>Our Truly Amazing Clients</h1>
-                    <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'white', opacity: '0.9', textAlign: 'center', }}>
+                    <h1 style={{ color: 'black', opacity: '0.9', textAlign: 'center' }}>Our Truly Amazing Clients</h1>
+                    <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', textAlign: 'center', fontWeight: '500' }}>
                         CC Software Solutions is proud to be associated with esteemed and prestigious clientele.
                         We promise to best represent our clients and exceed their expectations in every way possible.
                         Our top priority is meeting all the requirements of our amazing clients, who motivate us everyday.
                     </Typography>
-                </div>
-
-                {/* <Box sx={{ width: '90vw' }}>
-                    <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '500', fontSize: '30px' }}>Our Valued Clients..</Typography>
                     <br />
-                    <Grid container spacing={1}>
-                        <Grid item md={3} xs={6} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <Box className='clientBox'
-                                sx={{
-                                    width: { md: '20vw', xs: '40vw' },
-                                    height: { md: '10vh', xs: '6vh' },
-                                    background: 'rgb(255, 255, 255)',
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    opacity: '0.9'
-                                }}
-                            >
-                                <img
-                                    src={menu}
-                                    height='60vh'
-                                    width='100vw'
-                                />
-                                <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontWeight: 'bold', fontSize: { md: '30px', xs: '15px' } }}>Menu</Typography>
-
-                            </Box>
-                        </Grid>
-                        <Grid item md={3} xs={6} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <Box className='clientBox'
-                                sx={{
-                                    width: { md: '20vw', xs: '40vw' },
-                                    height: { md: '10vh', xs: '6vh' },
-                                    background: 'rgb(255, 255, 255)',
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    opacity: '0.9'
-                                }}>
-                                <img
-                                    src={bloommark}
-                                    height='60vh'
-                                    width='100vw'
-                                />
-                                <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontWeight: 'bold', fontSize: { md: '30px', xs: '15px' } }}>Bloommark</Typography>
-                            </Box>
-                        </Grid>
-                        <Grid item md={3} xs={6} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <Box className='clientBox'
-                                sx={{
-                                    width: { md: '20vw', xs: '40vw' },
-                                    height: { md: '10vh', xs: '6vh' },
-                                    background: 'rgb(255, 255, 255)',
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    opacity: '0.9'
-                                }}>
-                                <img
-                                    src={menu}
-                                    height='60vh'
-                                    width='100vw'
-                                />
-                                <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontWeight: 'bold', fontSize: { md: '30px', xs: '15px' } }}>Menu</Typography>
-                            </Box>
-                        </Grid>
-                    </Grid>
-                </Box> */}
+                    <Box sx={{ width: '100%' }}>
+                        <Marquee pauseOnHover>
+                            <div className='imageWrapper'>
+                                <h1>Menu</h1>
+                            </div>
+                            <div className='imageWrapper'>
+                                <h1>Bloommark</h1>
+                            </div>
+                            <div className='imageWrapper'>
+                                <h1>Thali Ella Resort</h1>
+                            </div>
+                            <div className='imageWrapper'>
+                                <h1>Hello</h1>
+                            </div>
+                            <div className='imageWrapper'>
+                                <h1>Grand Guardian Resort</h1>
+                            </div>
+                        </Marquee>
+                    </Box>
+                    <br />
+                </div>
             </Box >
             {/* Client details end */}
-
 
             {/* contact us start */}
             <Box >

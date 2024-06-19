@@ -99,7 +99,7 @@ function ContactMessage() {
                     </Grid>
                 </Grid>
                 <br />
-                <button className='contactBtn' type="submit"> Send
+                <button className='contactBtn' type="submit"> Send It Now
                     <span></span>
                 </button>
                 <br />

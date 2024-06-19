@@ -128,3 +128,11 @@ section {
   transform: scale(1.05);
 
 }
+
+.imageWrapper {
+  margin: 0px 30px
+}
+
+.imageWrapper img {
+  width: 80%;
+}
