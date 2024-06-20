@@ -6,7 +6,9 @@ import back1 from '../images/tm.jpg'
 import back2 from '../images/whiteBack.jpg'
 // import back2 from '../images/huji23.jpg'
 import menu from '../images/n.png'
-import bloommark from '../images/bloommark.png'
+import bloommark from '../images/BLOOMMARK.png'
+import menuLogo from '../images/Menu.png'
+import theliElla from '../images/Theli Ella.png'
 // import homeBack from '../images/whiteDark.jpg'
 import homeBack from '../images/white-cube.jpg'
 // import homeBack from '../images/homeBack.jpg'
@@ -383,7 +385,7 @@ function Home() {
                     padding: '20px'
                 }}
             >
-                <div style={{ width: '70%', display: 'flex', jtifyContent: 'center', alignItems: 'center', flexDirection: 'column', }}>
+                <div style={{ width: '100%', display: 'flex', jtifyContent: 'center', alignItems: 'center', flexDirection: 'column', }}>
                     <h1 style={{ color: 'black', opacity: '0.9', textAlign: 'center' }}>Our Truly Amazing Clients</h1>
                     <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', textAlign: 'center', fontWeight: '500' }}>
                         CC Software Solutions is proud to be associated with esteemed and prestigious clientele.
@@ -394,19 +396,22 @@ function Home() {
                     <Box sx={{ width: '100%' }}>
                         <Marquee pauseOnHover>
                             <div className='imageWrapper'>
-                                <h1>Menu</h1>
+                                <img src={menuLogo} alt='' />
                             </div>
                             <div className='imageWrapper'>
-                                <h1>Bloommark</h1>
+                                <img src={bloommark} alt='' />
                             </div>
                             <div className='imageWrapper'>
-                                <h1>Thali Ella Resort</h1>
+                                <img src={theliElla} alt='' />
                             </div>
                             <div className='imageWrapper'>
-                                <h1>Hello</h1>
+                                <img src={menuLogo} alt='' />
                             </div>
                             <div className='imageWrapper'>
-                                <h1>Grand Guardian Resort</h1>
+                                <img src={bloommark} alt='' />
+                            </div>
+                            <div className='imageWrapper'>
+                                <img src={theliElla} alt='' />
                             </div>
                         </Marquee>
                     </Box>

@@ -9,6 +9,7 @@ import './styles/Contact.css'
 import { Routes, Route } from 'react-router-dom'
 import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
+import Projects from './pages/Projects';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route exact path='/teammembers' element={<Team />} />
           <Route exact path='/contactus' element={<ContactUs />} />
           <Route exact path='/aboutus' element={<AboutUs />} />
+          <Route exact path='/projects' element={<Projects />} />
         </Routes>
       </div>
       <Footer />
