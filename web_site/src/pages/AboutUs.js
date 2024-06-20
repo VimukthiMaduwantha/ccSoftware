@@ -6,13 +6,6 @@ import about from '../images/whoAreWe.png'
 import aboutUS from '../images/aboutUS.jpg'
 import mission from '../images/mission.png'
 import vision from '../images/vision.png'
-import one from '../images/one.png'
-import two from '../images/two.png'
-import three from '../images/three.png'
-import four from '../images/four.png'
-import five from '../images/five.png'
-import six from '../images/six.png'
-import seven from '../images/seven.png'
 
 
 function AboutUs() {
@@ -160,7 +153,7 @@ function AboutUs() {
             </div>
             {/* our mission and vision end */}
             <br /><br /><br /><br />
-            {/* our values  */}
+            {/* our values start */}
             <div style={{
                 // backgroundImage: `url(${homeBack})`,
                 backgroundSize: 'cover',
@@ -194,7 +187,8 @@ function AboutUs() {
                     </Grid>
                 </Box>
             </div>
-
+            {/* our values end */}
+            <br /><br /><br /><br />
 
             {/* Why you choose us start*/}
             <div style={{
@@ -224,16 +218,10 @@ function AboutUs() {
                             </Box>
                         </Grid>
                     </Grid>
-                    <Grid container spacing={2} >
-                        <Grid sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} item md={4} xs={12}>
-                            <Box sx={{ padding: '10px' }}>
-                                <div style={{ display: 'flex', justifyContent: 'start', alignItems: 'center' }}>
-                                    <img
-                                        src={one}
-                                        width='30px'
-                                        alt='service'
-                                    />
-                                    &nbsp;&nbsp;
+                    <Grid container spacing={4} >
+                        <Grid sx={{ display: 'flex', justifyContent: 'center', }} item md={4} xs={12}>
+                            <Box sx={{ padding: '10px', }}>
+                                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10px' }}>
                                     <h3 style={{ color: 'black', opacity: '0.9' }}>Skilled, Enthusiastic Team</h3>
                                 </div>
                                 <center>
@@ -245,15 +233,9 @@ function AboutUs() {
 
                             </Box>
                         </Grid>
-                        <Grid sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} item md={4} xs={12}>
+                        <Grid sx={{ display: 'flex', justifyContent: 'center', }} item md={4} xs={12}>
                             <Box sx={{ padding: '10px' }}>
-                                <div style={{ display: 'flex', justifyContent: 'start', alignItems: 'center' }}>
-                                    <img
-                                        src={two}
-                                        width='30px'
-                                        alt='service'
-                                    />
-                                    &nbsp;&nbsp;
+                                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10px' }}>
                                     <h3 style={{ color: 'black', opacity: '0.9' }}>Creativity and Passion</h3>
                                 </div>
                                 <center>
@@ -265,15 +247,9 @@ function AboutUs() {
 
                             </Box>
                         </Grid>
-                        <Grid sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} item md={4} xs={12}>
+                        <Grid sx={{ display: 'flex', justifyContent: 'center' }} item md={4} xs={12}>
                             <Box sx={{ padding: '10px' }}>
-                                <div style={{ display: 'flex', justifyContent: 'start', alignItems: 'center' }}>
-                                    <img
-                                        src={three}
-                                        width='30px'
-                                        alt='service'
-                                    />
-                                    &nbsp;&nbsp;
+                                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
                                     <h3 style={{ color: 'black', opacity: '0.9' }}>Commitment to Integrity</h3>
                                 </div>
                                 <center>
@@ -284,15 +260,9 @@ function AboutUs() {
 
                             </Box>
                         </Grid>
-                        <Grid sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} item md={4} xs={12}>
+                        <Grid sx={{ display: 'flex', justifyContent: 'center', }} item md={4} xs={12}>
                             <Box sx={{ padding: '10px' }}>
-                                <div style={{ display: 'flex', justifyContent: 'start', alignItems: 'center' }}>
-                                    <img
-                                        src={four}
-                                        width='30px'
-                                        alt='service'
-                                    />
-                                    &nbsp;&nbsp;
+                                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
                                     <h3 style={{ color: 'black', opacity: '0.9' }}>Striving for Excellence</h3>
                                 </div>
                                 <center>
@@ -304,16 +274,12 @@ function AboutUs() {
 
                             </Box>
                         </Grid>
-                        <Grid sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} item md={4} xs={12}>
+                        <Grid sx={{ display: 'flex', justifyContent: 'center', }} item md={4} xs={12}>
                             <Box sx={{ padding: '10px' }}>
-                                <div style={{ display: 'flex', justifyContent: 'start', alignItems: 'center' }}>
-                                    <img
-                                        src={five}
-                                        width='30px'
-                                        alt='service'
-                                    />
-                                    &nbsp;&nbsp;
-                                    <h3 style={{ color: 'black', opacity: '0.9' }}>Valuing Relationships and Collaboration</h3>
+                                <div style={{ marginBottom: '10px' }}>
+                                    <center>
+                                        <h3 style={{ color: 'black', opacity: '0.9' }}>Valuing Relationships and Collaboration</h3>
+                                    </center>
                                 </div>
                                 <center>
                                     <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', opacity: '0.9', textAlign: 'center', fontSize: { xs: '13px', md: '16px' } }}>
@@ -324,15 +290,9 @@ function AboutUs() {
 
                             </Box>
                         </Grid>
-                        <Grid sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} item md={4} xs={12}>
+                        <Grid sx={{ display: 'flex', justifyContent: 'center', }} item md={4} xs={12}>
                             <Box sx={{ padding: '10px' }}>
-                                <div style={{ display: 'flex', justifyContent: 'start', alignItems: 'center' }}>
-                                    <img
-                                        src={six}
-                                        width='30px'
-                                        alt='service'
-                                    />
-                                    &nbsp;&nbsp;
+                                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
                                     <h3 style={{ color: 'black', opacity: '0.9' }}>Equal Treatment of Clients</h3>
                                 </div>
                                 <center>
@@ -344,16 +304,12 @@ function AboutUs() {
 
                             </Box>
                         </Grid>
-                        <Grid sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} item md={4} xs={12}>
+                        <Grid sx={{ display: 'flex', justifyContent: 'center', }} item md={4} xs={12}>
                             <Box sx={{ padding: '10px' }}>
-                                <div style={{ display: 'flex', justifyContent: 'start', alignItems: 'center' }}>
-                                    <img
-                                        src={seven}
-                                        width='30px'
-                                        alt='service'
-                                    />
-                                    &nbsp;&nbsp;
-                                    <h3 style={{ color: 'black', opacity: '0.9' }}>Top-Notch Products and Services</h3>
+                                <div style={{ marginBottom: '10px' }}>
+                                    <center>
+                                        <h3 style={{ color: 'black', opacity: '0.9' }}>Top-Notch Products and Services</h3>
+                                    </center>
                                 </div>
                                 <center>
                                     <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', opacity: '0.9', textAlign: 'center', fontSize: { xs: '13px', md: '16px' } }}>
@@ -367,7 +323,7 @@ function AboutUs() {
                 </Box>
             </div >
             {/* Why you choose us end*/}
-            <br /><br /><br /><br /><br />
+            < br /><br /><br /><br /><br />
 
 
 

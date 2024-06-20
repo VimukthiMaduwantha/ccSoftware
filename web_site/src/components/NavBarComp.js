@@ -21,6 +21,7 @@ function NavBarComp() {
                 <a href="/aboutus">Who Are We</a>
                 <a href="/teammembers">Our Team</a>
                 <a href="/service">Service</a>
+                <a href="/projects">Projects</a>
                 <a href="/contactus">Get In Touch</a>
             </div>
             <div
