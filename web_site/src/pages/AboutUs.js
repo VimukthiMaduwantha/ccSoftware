@@ -17,7 +17,7 @@ function AboutUs() {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
-
+                borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))',
             }}
                 className='no-select'
             >
@@ -29,7 +29,7 @@ function AboutUs() {
                     display: 'flex',
                     justifyContent: 'start',
                     alignItems: 'center',
-                    paddingLeft: '3vw'
+                    paddingLeft: '3vw',
                 }}>
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontSize: { md: '6vw', xs: '40px' }, }}>Who Are We</Typography>
@@ -58,7 +58,8 @@ function AboutUs() {
                                 style={{
                                     width: '100%',
                                     height: '100%',
-                                    objectFit: 'cover', // or 'contain' based on your requirement
+                                    aspectRatio: 3 / 2,
+                                    objectFit: 'cover'
                                 }}
                             />
                         </Grid>

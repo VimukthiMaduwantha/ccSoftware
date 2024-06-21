@@ -48,25 +48,18 @@ function Team() {
                 <Box sx={{ width: '80vw' }} >
                     <Grid container spacing={3}>
                         {teamMembers.map((e, i) => (
-                            <Grid item md={3} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <Card sx={{
-                                    width: '300px', height: '400px'/* , transition: 'transform 0.5s' */, borderRadius: '15px', background: 'black',
-                                    /* '&:hover': {
-                                        transform: 'scale(1.05)', // Enlarge the card on hover
-                                        boxShadow: '1px 1px 12px rgba(77, 190, 233, 1)'
-                                    }, */
-                                }} >
-                                    <div style={{ overflow: 'hidden' }}>
-                                        <img
-                                            src={e.image}
-                                            className='teamImage'
-                                        />
-                                    </div>
-                                    <div>
-                                        <Typography sx={{/*  color: '#A974D0' */color: 'white', opacity: '0.7', fontFamily: "Montserrat, sans-serif", fontWeight: '700' }}>{e.name}</Typography>
-                                        <Typography sx={{ /* color: '#4DBEE9' */color: 'white', opacity: '0.7', fontFamily: "Montserrat, sans-serif", fontWeight: '200', fontSize: '15px' }}>{e.position}</Typography>
-                                    </div>
-                                </Card>
+                            <Grid item md={3} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+                                <div /* style={{ overflow: 'hidden' }} */>
+                                    <img
+                                        src={e.image}
+                                        className='teamImage'
+                                    />
+                                </div>
+                                <div>
+                                    <Typography sx={{ color: '#A974D0', fontFamily: "Montserrat, sans-serif", fontWeight: '700' }}>{e.name}</Typography>
+                                    <Typography sx={{ color: 'black', opacity: '0.9', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: '15px' }}>{e.position}</Typography>
+                                </div>
+                                {/* </Card> */}
                             </Grid>
                         ))}
                     </Grid>
