@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box, Grid, Typography } from '@mui/material'
 import projects from '../images/projects.jpg'
+import pos from "../data/pos.json";
+import mobile from "../data/mobile.json";
+import DialogComponent from '../components/DialogComponent';
+
 
 function Projects() {
+    const [rowData, setRowData] = useState({});
+    const [handleOpen, setHandleOpen] = useState(false);
+
+    function MoreInfoPos(data) {
+        setRowData(data);
+        setHandleOpen(true);
+    }
+
+    console.log("info:> ", rowData)
     return (
         <>
             <Box sx={{
@@ -32,6 +45,8 @@ function Projects() {
                 </Box>
             </Box >
             <br />
+
+            {/* POS systems */}
             <div style={{
                 // backgroundImage: `url(${homeBack})`,
                 backgroundSize: 'cover',
@@ -43,19 +58,91 @@ function Projects() {
                 // borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))',
             }} >
                 <Box sx={{ width: { xs: '97%', md: '100%' }, padding: '10px', }}>
-                    <Grid container >
-                        <Grid sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} item md={7} xs={12}>
+                    <Grid container spacing={5}  >
+                        <Grid sx={{ display: 'flex', justifyContent: 'flex-start', }} item md={12} xs={12}>
                             <Box sx={{ padding: '10px' }}>
-                                <center>
-                                    <h1 style={{ color: 'black', opacity: '0.9' }}>Who are we ? </h1>
-                                </center>
+                                <h1 style={{ color: 'black', opacity: '0.9' }}>Point Of Sale Systems </h1>
                             </Box>
                         </Grid>
+                        {pos.map((data, i) => (
+                            <Grid item md={4} xs={12} >
+                                <div class="card">
+                                    <div class="card-details">
+                                        <div style={{ display: 'flex', justifyContent: 'center', height: '165px' }}>
+                                            <img
+                                                src={data.image1}
+                                                height='150px'
+                                                width='100%'
+
+                                            />
+                                        </div>
+                                        <div style={{ overflow: 'hidden', paddingBottom: '15px' }}>
+                                            <p class="text-title">{data.name}</p>
+                                            <p class="text-body">{data.intro}</p>
+                                        </div>
+                                    </div>
+                                    <button class="card-button" onClick={() => MoreInfoPos(data)}>More info</button>
+                                </div>
+                            </Grid>
+                        ))}
+
+                    </Grid>
+                </Box>
+            </div >
+            <br /><br />
+
+            {/* Mobile Apps */}
+            <div style={{
+                // backgroundImage: `url(${homeBack})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                height: '100%',
+                display: 'flex',
+                justifyContent: 'center',
+                // borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))',
+            }} >
+                <Box sx={{ width: { xs: '97%', md: '100%' }, padding: '10px', }}>
+                    <Grid container spacing={5}  >
+                        <Grid sx={{ display: 'flex', justifyContent: 'flex-start', }} item md={12} xs={12}>
+                            <Box sx={{ padding: '10px' }}>
+                                <h1 style={{ color: 'black', opacity: '0.9' }}>Mobile Applications </h1>
+                            </Box>
+                        </Grid>
+                        {mobile.map((data, i) => (
+                            <Grid item md={4} xs={12} >
+                                <div class="card">
+                                    <div class="card-details">
+                                        <div style={{ display: 'flex', justifyContent: 'center', height: '165px' }}>
+                                            <img
+                                                src={data.image}
+                                                height='150px'
+                                                width='100%'
+
+                                            />
+                                        </div>
+                                        <div style={{ overflow: 'hidden', paddingBottom: '15px' }}>
+                                            <p class="text-title">{data.name}</p>
+                                            <p class="text-body">{data.description}</p>
+                                        </div>
+                                    </div>
+                                    {/* <button class="card-button" onClick={() => MoreInfo(data)}>More info</button> */}
+                                </div>
+                            </Grid>
+                        ))}
                     </Grid>
                 </Box>
             </div>
-            <br /><br /><br /><br /><br />
+            <br /><br />
 
+
+            {/* Dialog Component */}
+            <DialogComponent
+                rowData={rowData}
+                setRowData={setRowData}
+                handleOpen={handleOpen}
+                setHandleOpen={setHandleOpen}
+            />
         </>
     )
 }
