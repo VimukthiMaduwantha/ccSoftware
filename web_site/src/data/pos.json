@@ -1,0 +1,20 @@
+[
+    {
+        "pid": "1",
+        "name": "Me'n'u Restaurant",
+        "intro": "hello wolrd",
+        "description": "fdvsifdhsfghsdgfhdgfhdgsfhdgsfgsdyittttttttttttttttttttttttttttt",
+        "image1": "assets/projects/testSS.PNG",
+        "image2": "assets/projects/pos01.PNG",
+        "tech": "React js, Node js, Express js, MongoDB"
+    },
+    {
+        "pid": "2",
+        "name": "BloomMark",
+        "intro": "hello wolrd",
+        "description": "We pride ourselves on delivering cutting-edge technology solutions that enhance business operations. Recently, we had the privilege of developing a cloud point of sales (POS) system for Bloommark, a leading clothing shop renowned for its contemporary fashion collections and exceptional customer service. Our objective was to design and implement a robust, user-friendly, and scalable POS system that would streamline Bloommark's sales processes, improve inventory management, and provide real-time data insights, ultimately leading to a superior shopping experience for Bloommark's customers. Key features of our solution include cloud-based architecture for enhanced data accessibility and security, an intuitive user interface to simplify sales processes and reduce transaction times, comprehensive inventory management for real-time tracking and automatic reordering, detailed sales reporting and analytics for valuable insights, seamless integration with existing business systems, and scalability to accommodate Bloommark's growth. By implementing this advanced cloud POS system, Bloommark is well-equipped to enhance operational efficiency, improve customer satisfaction, and drive business growth. We are proud of this successful collaboration and look forward to continuing to support Bloommark in its technological journey.",
+        "image1": "assets/projects/testSS.PNG",
+        "image2": "assets/projects/pos01.PNG",
+        "tech": "React js, Node js, Express js, MongoDB"
+    }
+]

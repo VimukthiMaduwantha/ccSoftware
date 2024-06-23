@@ -12,3 +12,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
 }
+
+
+/* customized scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+  opacity: o.5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #A974D0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4DBEE9;
+}
