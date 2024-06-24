@@ -12,9 +12,10 @@ function NavBarCompNew() {
                 <a href="/">
                     <img
                         src={logo}
-                        height='80px'
-                        width='auto'
+                        // height='80px'
+                        // width='auto'
                         alt="logo"
+                        className="navBarLogo"
                     />
                 </a>
             </div>
