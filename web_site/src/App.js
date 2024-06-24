@@ -1,6 +1,7 @@
 import './App.css';
 import Footer from './components/Footer';
 import NavBarComp from './components/NavBarComp';
+import NavBarCompNew from './components/NavBarCompNew';
 import Home from './pages/Home';
 import Team from './pages/Team';
 import './styles/Navbar.css'
@@ -15,7 +16,8 @@ function App() {
 
   return (
     <>
-      <NavBarComp />
+      {/* <NavBarComp /> */}
+      <NavBarCompNew />
       <div className="App">
         <Routes>
           <Route exact path='/' element={<Home />} />
