@@ -11,6 +11,10 @@ import { Routes, Route } from 'react-router-dom'
 import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
 import Projects from './pages/Projects';
+import WebDev from './pages/WebDev'
+import MobileDev from './pages/MobileDev'
+import DIgitalMarketing from './pages/DIgitalMarketing'
+import PrductDesign from './pages/PrductDesign'
 
 function App() {
 
@@ -25,6 +29,10 @@ function App() {
           <Route exact path='/contactus' element={<ContactUs />} />
           <Route exact path='/aboutus' element={<AboutUs />} />
           <Route exact path='/projects' element={<Projects />} />
+          <Route exact path='/webDevelopment' element={<WebDev />} />
+          <Route exact path='/mobileDevelopment' element={<MobileDev />} />
+          <Route exact path='/digitalMarketing' element={<DIgitalMarketing />} />
+          <Route exact path='/productDesign' element={<PrductDesign />} />
         </Routes>
       </div>
       <Footer />
