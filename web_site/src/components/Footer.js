@@ -5,6 +5,9 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import XIcon from '@mui/icons-material/X';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+
 
 function Footer() {
     useEffect(() => {
@@ -23,6 +26,16 @@ function Footer() {
         <>
             <Box sx={{ height: '100%', background: 'black', padding: '10px' }}>
                 <Grid container spacing={2}>
+                    <Grid item md={4} xs={12} sx={{ display: { md: 'flex', xs: 'none' }, justifyContent: 'center', alignItems: 'center' }}>
+                        <div>
+                            <img
+                                src={logo}
+                                height='80px'
+                                width='auto'
+                                alt='footerLogo'
+                            />
+                        </div>
+                    </Grid>
                     <Grid item md={4} xs={12}>
                         <div className='no-select'>
                             <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", /* textAlign: 'justify' */ }}>
@@ -33,7 +46,7 @@ function Footer() {
                             </Typography>
                         </div>
                     </Grid>
-                    <Grid item md={4} xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
+                    <Grid item md={4} xs={6} sx={{ display: 'flex', justifyContent: 'center' }}>
                         <div>
                             <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontSize: '20px' }}>Connect With Us</Typography>
                             <Box sx={{ marginTop: '2vh' }}>
@@ -57,19 +70,10 @@ function Footer() {
                                         <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", opacity: '0.8', }}><a style={{ textDecoration: 'none', color: 'white' }} href='mailto:info@ccsoftwares.com'>info@ccsoftwares.com</a></Typography>
                                     </div>
                                 </div>
-                                <div>
-                                    <a href='https://www.facebook.com/profile.php?id=61555503735807' target="_blank">
-                                        <FacebookIcon sx={{ color: 'white' }} />
-                                    </a>
-                                    &nbsp; &nbsp;
-                                    <a href='https://www.instagram.com/ccsoftwares?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target="_blank">
-                                        <InstagramIcon sx={{ color: 'white' }} />
-                                    </a>
-                                </div>
                             </Box>
                         </div>
                     </Grid>
-                    <Grid item md={4} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Grid item md={4} xs={6} sx={{ display: { md: 'none', xs: 'flex' }, justifyContent: 'center', alignItems: 'center' }}>
                         <div>
                             <img
                                 src={logo}
@@ -79,8 +83,26 @@ function Footer() {
                             />
                         </div>
                     </Grid>
+                    <Grid item md={12} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <div>
+                            <a href='https://www.facebook.com/profile.php?id=61555503735807' target="_blank">
+                                <FacebookIcon sx={{ color: 'white' }} />
+                            </a>
+                            &nbsp; &nbsp;
+                            <a href='https://www.instagram.com/ccsoftwares?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target="_blank">
+                                <InstagramIcon sx={{ color: 'white' }} />
+                            </a>
+                            &nbsp; &nbsp;
+                            <a href='#' target="_blank">
+                                <YouTubeIcon sx={{ color: 'white' }} />
+                            </a>
+                            &nbsp; &nbsp;
+                            <a href='#' target="_blank">
+                                <XIcon sx={{ color: 'white' }} />
+                            </a>
+                        </div>
+                    </Grid>
                 </Grid>
-                <br />
                 <hr style={{ opacity: '0.5' }} />
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", opacity: '0.7', fontSize: { md: '13px', xs: '12px' } }}>
