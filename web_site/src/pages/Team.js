@@ -21,7 +21,7 @@ function Team() {
                 className='no-select'
             >
                 <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#A974D0', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Our Team</Typography>
+                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Our Team</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -39,7 +39,7 @@ function Team() {
             </Box >
             <Box>
                 <div style={{ padding: '20px' }}>
-                    <Typography sx={{ color: '#A974D0', fontFamily: "Montserrat, sans-serif", fontSize: { md: '17px', xs: '15px' }, fontWeight: '600' }}>Experience. Talent. Unity.</Typography>
+                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", fontSize: { md: '17px', xs: '15px' }, fontWeight: '600' }}>Experience. Talent. Unity.</Typography>
                     <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontSize: { md: '52px', xs: '15px' } }}>Meet the experties in the industry</Typography>
                 </div>
             </Box>
@@ -56,7 +56,7 @@ function Team() {
                                     />
                                 </div>
                                 <div>
-                                    <Typography sx={{ color: '#A974D0', fontFamily: "Montserrat, sans-serif", fontWeight: '700' }}>{e.name}</Typography>
+                                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", fontWeight: '700' }}>{e.name}</Typography>
                                     <Typography sx={{ color: 'black', opacity: '0.9', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: '15px' }}>{e.position}</Typography>
                                 </div>
                                 {/* </Card> */}
