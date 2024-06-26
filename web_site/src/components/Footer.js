@@ -106,7 +106,7 @@ function Footer() {
                 <hr style={{ opacity: '0.5' }} />
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", opacity: '0.7', fontSize: { md: '13px', xs: '12px' } }}>
-                        ©2024.All Rights Reserved by CC Software Solutions.
+                        © 2024.All Rights Reserved by CC Software Solutions.
                     </Typography>
                 </div>
             </Box >

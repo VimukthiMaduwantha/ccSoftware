@@ -19,6 +19,7 @@ import mongoDB from '../images/MongoDB.png'
 import mobile from '../images/mobileLogo.png'
 import ui from '../images/ui.png'
 import dMarketing from '../images/dMarketing.png'
+import electronJS from '../images/electronJS.png'
 import Marquee from 'react-fast-marquee'
 
 
@@ -90,7 +91,7 @@ function Home() {
                                     >
                                         <img
                                             src={react}
-                                            height='50%'
+                                            height='55px'
                                             width='auto'
                                             style={{ display: 'flex', justifyContent: 'center' }}
                                             alt='reactJS'
@@ -116,7 +117,7 @@ function Home() {
                                     >
                                         <img
                                             src={node}
-                                            height='50%'
+                                            height='55px'
                                             width='auto'
                                             style={{ display: 'flex', justifyContent: 'center' }}
                                             alt='nodeJS'
@@ -142,7 +143,7 @@ function Home() {
                                     >
                                         <img
                                             src={mongoDB}
-                                            height='50%'
+                                            height='55px'
                                             width='auto'
                                             style={{ display: 'flex', justifyContent: 'center' }}
                                             alt='mongoDB'
@@ -167,15 +168,15 @@ function Home() {
                                         }}
                                     >
                                         <img
-                                            src={mongoDB}
-                                            height='50%'
+                                            src={electronJS}
+                                            height='55px'
                                             width='auto'
                                             style={{ display: 'flex', justifyContent: 'center' }}
                                             alt='mongoDB'
                                         />
                                         <br />
-                                        <h3 style={{ color: 'black', }}>MongoDB</h3>
-                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Popular NoSQL database known for its flexibility and scalability.</Typography>
+                                        <h3 style={{ color: 'black', }}>Electron JS</h3>
+                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Electron.js enables cross-platform desktop apps using JavaScript, HTML, and CSS.</Typography>
                                     </Card>
                                 </Grid>
                                 <Grid item md={4} xs={12}>
