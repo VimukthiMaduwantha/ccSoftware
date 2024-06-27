@@ -111,7 +111,7 @@ function DIgitalMarketing() {
                                 </Typography>
                                 <br />
                                 <center>
-                                    <a href="/socialMedia">
+                                    <a href="/emailMarketing">
                                         <button class="cta">
                                             <span class="hover-underline-animation"> More Info </span>
                                             <svg
@@ -152,7 +152,7 @@ function DIgitalMarketing() {
                                 </Typography>
                                 <br />
                                 <center>
-                                    <a href="/socialMedia">
+                                    <a href="/serachEngineOptimization">
                                         <button class="cta">
                                             <span class="hover-underline-animation"> More Info </span>
                                             <svg
