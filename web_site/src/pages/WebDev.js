@@ -328,8 +328,6 @@ function WebDev() {
                     </Box>
                 </center>
             </Box >
-
-
         </>
     )
 }
