@@ -8,6 +8,8 @@ import expert from '../images/expert.png'
 import meeting from '../images/meeting.png'
 import branding from '../images/branding.png'
 import timing from '../images/fast-time.png'
+import cost from '../images/reduction.png'
+import back1 from '../images/tm.jpg'
 
 
 
@@ -43,7 +45,7 @@ function MobileDev() {
             <br /><br /><br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
-                    <Grid container spacing={5}>
+                    <Grid container spacing={2}>
                         <Grid item md={8} xs={12}>
                             <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '35px', xs: '39px' }, fontWeight: '500' }}>Mobile Development</Typography>
                             <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>Smartphones have become the primary device for most people, with 90% preferring mobile apps over websites. As people spend more time on their phones, they conduct nearly all essential activities through mobile apps. Our innovative organization specializes in developing customized mobile applications, delivering clients' visions with outstanding results. Our team of creative and skilled developers excels in creating any type of mobile application.</Typography>
@@ -52,7 +54,7 @@ function MobileDev() {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <img
                                     src={mobileBack}
-                                    height='230px'
+                                    height='180px'
                                     width='auto'
                                     alt='reactJS'
                                 />
@@ -63,7 +65,7 @@ function MobileDev() {
                             <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
                                 <img
                                     src={reactNative}
-                                    height='230px'
+                                    height='150px'
                                     width='auto'
                                     alt='reactJS'
                                 />
@@ -86,7 +88,7 @@ function MobileDev() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Cross-Platform Mobile Apps</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '39px' } }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px' } }}>
                                             React Native harnesses JavaScript and React-like components to compile code into native iOS and Android technologies, allowing for the creation of cross-platform mobile apps.
                                         </Typography>
                                     </Grid>
@@ -100,7 +102,7 @@ function MobileDev() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Smooth Run-Time</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '39px' } }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px' } }}>
                                             It offers efficient runtime performance with extensive third-party plugins and diverse modules. By minimizing cross-bridge linking and optimizing code usage during runtime, it conserves memory effectively.
                                         </Typography>
                                     </Grid>
@@ -114,7 +116,7 @@ function MobileDev() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>High-Performing Applications</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '39px' } }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px' } }}>
                                             Angular, a widely adopted framework for both mobile and web applications, leverages its robust features to develop high-performance mobile apps effectively.
                                         </Typography>
                                     </Grid>
@@ -128,7 +130,7 @@ function MobileDev() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Cost Effective</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '39px' } }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px' } }}>
                                             Working within tight budget constraints is crucial for clients considering mobile app development. Thankfully, React Native offers cost-efficiency, saving both time and money.
                                         </Typography>
                                     </Grid>
@@ -210,7 +212,7 @@ function MobileDev() {
                         <Grid item md={4} xs={12}>
                             <div style={{ display: 'flex', justifyContent: 'center' }}>
                                 <img
-                                    src={timing}
+                                    src={cost}
                                     height='100px'
                                     width='auto'
                                     alt='teamWeb'
@@ -225,7 +227,29 @@ function MobileDev() {
                     </Grid>
                 </Box>
             </div>
-
+            <br />
+            <Box>
+                <center>
+                    <Box sx={{
+                        height: { md: '50vh', xs: '50vh' },
+                        backgroundImage: `url(${back1})`,
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center'
+                    }}
+                    >
+                        <div style={{ padding: '10px' }} >
+                            <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '500', fontSize: { md: '80px', xs: '70px' } }}>Let's Start</Typography>
+                            <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontWeight: '700', fontSize: { md: '20px', xs: '16px' } }}>Empowering businesses through custom software solutions. Your success, our code. #CCSoftwareSolutions</Typography>
+                            <br />
+                            <a className="btnContact" href="/contactus">Contact Us</a>
+                        </div>
+                    </Box>
+                </center>
+            </Box >
         </>
     )
 }

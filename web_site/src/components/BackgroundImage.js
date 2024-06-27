@@ -38,7 +38,7 @@ function BackgroundImage() {
             >
                 <Grid container spacing={1} sx={{ width: { md: '90%', xs: '100%', }, }}>
                     <Grid item md={6} xs={12} sx={{ height: { md: 'calc(100vh - 80px)', xs: 'calc(100vh - 80px)/2' }, display: 'flex', justifyContent: 'center', alignItems: 'center'/* , background: 'red' */ }}>
-                        <div>
+                        <div style={{ padding: '10px' }}>
                             <Typography
                                 sx={{
                                     fontSize: { md: '4vw', xs: '7vw' },
@@ -53,12 +53,13 @@ function BackgroundImage() {
                             <Typography
                                 sx={{
                                     paddingLeft: { md: '20px', xs: 'none' },
-                                    fontSize: { md: '1.2vw', xs: '3vw' },
+                                    fontSize: { md: '1.2vw', xs: '4vw' },
                                     color: 'black',
                                     fontFamily: "Montserrat, sans-serif",
                                     fontOpticalSizing: 'auto',
                                     fontStyle: 'normal',
                                     fontWeight: '500',
+                                    textAlign: 'center'
                                 }}
                             >
                                 CC Software Solutions is your trusted partner for innovative IT product development.
@@ -68,7 +69,7 @@ function BackgroundImage() {
                             </Typography>
                             <br />
                             <div className='btn-container'>
-                                <button className="btn"><i className="animation"></i><a href='/aboutus' style={{ fontFamily: "Montserrat, sans-serif", textDecoration: 'none', color: 'black', cursor: 'pointer' }}>Read More About Us</a><i className="animation"></i></button>
+                                <button className="btn"><i className="animation"></i><a href='/aboutus' style={{ fontFamily: "Montserrat, sans-serif", textDecoration: 'none', color: 'black', cursor: 'pointer', fontSize: '13px' }}>Read More About Us</a><i className="animation"></i></button>
                             </div>
                         </div>
                     </Grid>

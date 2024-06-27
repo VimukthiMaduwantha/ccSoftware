@@ -15,6 +15,7 @@ import WebDev from './pages/WebDev'
 import MobileDev from './pages/MobileDev'
 import DIgitalMarketing from './pages/DIgitalMarketing'
 import PrductDesign from './pages/PrductDesign'
+import SocialMedia from './pages/SocialMedia';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
           <Route exact path='/mobileDevelopment' element={<MobileDev />} />
           <Route exact path='/digitalMarketing' element={<DIgitalMarketing />} />
           <Route exact path='/productDesign' element={<PrductDesign />} />
+          <Route exact path='/socialMedia' element={<SocialMedia />} />
         </Routes>
       </div>
       <Footer />
