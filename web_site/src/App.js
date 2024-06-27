@@ -1,6 +1,6 @@
 import './App.css';
 import Footer from './components/Footer';
-import NavBarComp from './components/NavBarComp';
+// import NavBarComp from './components/NavBarComp';
 import NavBarCompNew from './components/NavBarCompNew';
 import Home from './pages/Home';
 import Team from './pages/Team';
@@ -16,6 +16,8 @@ import MobileDev from './pages/MobileDev'
 import DIgitalMarketing from './pages/DIgitalMarketing'
 import PrductDesign from './pages/PrductDesign'
 import SocialMedia from './pages/SocialMedia';
+import EmailMarketing from './pages/EmailMarketing';
+import SearchEngin from './pages/SearchEngin';
 
 function App() {
 
@@ -35,6 +37,8 @@ function App() {
           <Route exact path='/digitalMarketing' element={<DIgitalMarketing />} />
           <Route exact path='/productDesign' element={<PrductDesign />} />
           <Route exact path='/socialMedia' element={<SocialMedia />} />
+          <Route exact path='/emailMarketing' element={<EmailMarketing />} />
+          <Route exact path='/serachEngineOptimization' element={<SearchEngin />} />
         </Routes>
       </div>
       <Footer />
