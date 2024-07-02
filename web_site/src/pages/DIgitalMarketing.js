@@ -193,7 +193,7 @@ function DIgitalMarketing() {
                                 </Typography>
                                 <br />
                                 <center>
-                                    <a href="/socialMedia">
+                                    <a href="/graphicDesign">
                                         <button class="cta">
                                             <span class="hover-underline-animation"> More Info </span>
                                             <svg
