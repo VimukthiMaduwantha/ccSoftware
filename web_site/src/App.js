@@ -18,6 +18,7 @@ import PrductDesign from './pages/PrductDesign'
 import SocialMedia from './pages/SocialMedia';
 import EmailMarketing from './pages/EmailMarketing';
 import SearchEngin from './pages/SearchEngin';
+import GraphicDesign from './pages/GraphicDesign';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
           <Route exact path='/socialMedia' element={<SocialMedia />} />
           <Route exact path='/emailMarketing' element={<EmailMarketing />} />
           <Route exact path='/serachEngineOptimization' element={<SearchEngin />} />
+          <Route exact path='/graphicDesign' element={<GraphicDesign />} />
         </Routes>
       </div>
       <Footer />
