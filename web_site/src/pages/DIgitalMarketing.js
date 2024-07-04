@@ -275,7 +275,7 @@ function DIgitalMarketing() {
                                 </Typography>
                                 <br />
                                 <center>
-                                    <a href="/socialMedia">
+                                    <a href="/paidSearch">
                                         <button class="cta">
                                             <span class="hover-underline-animation"> More Info </span>
                                             <svg

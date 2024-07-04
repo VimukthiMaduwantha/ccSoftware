@@ -20,6 +20,7 @@ import EmailMarketing from './pages/EmailMarketing';
 import SearchEngin from './pages/SearchEngin';
 import GraphicDesign from './pages/GraphicDesign';
 import ContentMarketing from './pages/ContentMarketing';
+import PaidSearch from './pages/PaidSearch';
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
           <Route exact path='/serachEngineOptimization' element={<SearchEngin />} />
           <Route exact path='/graphicDesign' element={<GraphicDesign />} />
           <Route exact path='/contentMarketing' element={<ContentMarketing />} />
+          <Route exact path='/paidSearch' element={<PaidSearch />} />
         </Routes>
       </div>
       <Footer />
