@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Grid, Typography } from '@mui/material'
-import content from '../images/content.jpg'
-import content1 from '../images/contentaa.jpg'
+import paid from '../images/paid.jpg'
+import paidSearch1 from '../images/paidSearch1.jpg'
 import webTik from '../images/tik.png'
 import brand from '../images/brand-asset-management.png'
 import result from '../images/results.png'
@@ -11,22 +11,21 @@ import efficiency from '../images/efficiency.png'
 import experience from '../images/experience.png'
 import back1 from '../images/tm.jpg'
 
-
-function ContentMarketing() {
+function PaidSearch() {
     return (
         <>
             <Box sx={{
                 height: { md: 'calc(60vh - 80px)', xs: '30vh' },
-                backgroundImage: `url(${content})`,
+                backgroundImage: `url(${paid})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
-                borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))',
+                // borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))',
             }}
                 className='no-select'
             >
                 <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Content Marketing</Typography>
+                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Paid Search</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -36,7 +35,7 @@ function ContentMarketing() {
                     paddingLeft: '3vw',
                 }}>
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontSize: { md: '6vw', xs: '39px' }, }}>Content Marketing</Typography>
+                        <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontSize: { md: '6vw', xs: '39px' }, }}>Paid Search</Typography>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
                 </Box>
@@ -44,19 +43,19 @@ function ContentMarketing() {
             <br /><br /><br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
-                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>WHAT IS CONTENT MARKETING? </Typography>
+                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>WHAT IS PAID SEARCH? </Typography>
                     <br />
                     <Grid container spacing={5} >
                         <Grid item md={12} xs={12} >
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '25px', xs: '18px' }, fontWeight: '500' }}>Creative Approaches and Tactics to Draw in Customers.</Typography>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '25px', xs: '18px' }, fontWeight: '500' }}>Reaching the Right Audience with Measurable and Controllable Marketing Strategies</Typography>
                             <br />
                             <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
-                                Content marketing involves engaging with your audience by creating and distributing relevant articles, posts, videos, and other media across various platforms. This strategy helps increase brand awareness and drive sales by connecting with customers in a meaningful and informative way.
+                                Paid search is a straightforward pay-per-click process. Popular search engines like Google allow advertisers to display ads on their search engine results pages, and you only pay when someone clicks on the ad.
                             </Typography>
                         </Grid>
                         <Grid item md={6} xs={12}>
                             <img
-                                src={content1}
+                                src={paidSearch1}
                                 alt='service'
                                 style={{
                                     width: '100%',
@@ -67,9 +66,9 @@ function ContentMarketing() {
                             />
                         </Grid>
                         <Grid item md={6} xs={12}>
-                            <h2 style={{ color: 'black', }}>Content Marketing</h2>
+                            <h2 style={{ color: 'black', }}>Paid Search</h2>
                             <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
-                                Great content can significantly transform an ordinary business into an extraordinary one by drawing in a large audience. At EC, our content writers create compelling and unique content for all types of businesses, ensuring that what they write effectively promotes and sells your products or services.
+                                The success of an online business hinges on the volume of traffic to your site. More traffic generates more leads, resulting in increased sales. At Envision Circle, we go beyond standard PPV services, offering custom-made solutions at affordable rates for all businesses.
                             </Typography>
                             <br />
                             <Grid item md={12} xs={12}>
@@ -83,9 +82,9 @@ function ContentMarketing() {
                                         />
                                     </Grid>
                                     <Grid item md={11} xs={11}>
-                                        <h4>Content creation</h4>
+                                        <h4>Display Advertising</h4>
                                         <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
-                                            Eye-catching content provides numerous benefits. At Envision Circle, our experienced designers create captivating content for your social media and websites, keeping your clients engaged and interested in your business.
+                                            In digital marketing, display advertising functions like a digital billboard, effectively creating brand awareness among a wide audience. It's a straightforward method to reach a large number of people within your target audience.
                                         </Typography>
                                     </Grid>
                                     <Grid item md={1} xs={1} sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -97,9 +96,9 @@ function ContentMarketing() {
                                         />
                                     </Grid>
                                     <Grid item md={11} xs={11}>
-                                        <h4>Copywriting</h4>
+                                        <h4>Remarketing</h4>
                                         <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
-                                            Effective communication with your customers is crucial for any business. Our professional copywriters at EC thoroughly research the market to craft content that tells your story and builds a unique connection between your business and your customers.
+                                            An effective way to re-engage potential customers who visited your business but didn't make a purchase is a powerful tool for boosting your conversion rates and increasing profitability.
                                         </Typography>
                                     </Grid>
                                     <Grid item md={1} xs={1} sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -111,9 +110,9 @@ function ContentMarketing() {
                                         />
                                     </Grid>
                                     <Grid item md={11} xs={11}>
-                                        <h4>Content Audit</h4>
+                                        <h4>PPC Advertising</h4>
                                         <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
-                                            Engaging and well-crafted content attracts more people to your business. Conducting a content audit is a crucial SEO tactic that helps analyze the tone of voice across your business or website.
+                                            One of the most effective methods to drive targeted traffic to your site is through platforms like Google Ads, including Google Shopping, and Bing Ads. At our company, we possess the expertise and technology necessary to monitor and implement these strategies effectively for your business.
                                         </Typography>
                                     </Grid>
                                     <Grid item md={1} xs={1} sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -125,9 +124,9 @@ function ContentMarketing() {
                                         />
                                     </Grid>
                                     <Grid item md={11} xs={11}>
-                                        <h4>Content Optimization</h4>
+                                        <h4>PPC Audit</h4>
                                         <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
-                                            This process ensures your content attracts the right audience. It aids in keyword research, and when done correctly, it results in increased organic search traffic and consistent repeat visitors.
+                                            PPC campaigns should aim to achieve a respectable ROAS (Return On Ad Spend) to demonstrate success. We offer a comprehensive review of your current PPC setup, provide detailed reports, and recommend strategies to optimize your PPC budget effectively.
                                         </Typography>
                                     </Grid>
                                 </Grid>
@@ -261,10 +260,8 @@ function ContentMarketing() {
                     </Box>
                 </center>
             </Box >
-
         </>
-
     )
 }
 
-export default ContentMarketing
+export default PaidSearch
