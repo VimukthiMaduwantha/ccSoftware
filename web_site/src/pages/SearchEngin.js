@@ -24,8 +24,8 @@ function SearchEngin() {
             }}
                 className='no-select'
             >
-                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Search Engine Optimization</Typography>
+                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '10px' }}>
+                    <a href='/digitalMarketing' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Digital Marketing |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Search Engine Optimization</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -43,13 +43,13 @@ function SearchEngin() {
             <br /><br /><br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
-                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>WHAT IS SEARCH ENGINE OPTIMIZATION? </Typography>
+                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600', textAlign: 'center' }}>WHAT IS SEARCH ENGINE OPTIMIZATION? </Typography>
                     <br />
                     <Grid container spacing={5} >
                         <Grid item md={12} xs={12} >
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '25px', xs: '18px' }, fontWeight: '500' }}>Specialization in SEO for Enhancing Your Website's Performance.</Typography>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '35px', xs: '20px' }, fontWeight: '500', textAlign: 'center' }}>Specialization in SEO for Enhancing Your Website's Performance.</Typography>
                             <br />
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', }}>
                                 Search Engine Optimization (SEO) is vital for any business with an online presence, as it drives organic traffic
                                 without the expenses associated with Pay-Per-Click (PPC) campaigns. By implementing SEO, businesses aim
                                 to improve their search engine rankings, thereby enhancing their visibility and attracting more visitors.
@@ -57,6 +57,9 @@ function SearchEngin() {
                                 without the need to pay for each visitor, making SEO an essential strategy for online success.
                             </Typography>
                         </Grid>
+                    </Grid>
+                    <br /><br /><br />
+                    <Grid container spacing={5} >
                         <Grid item md={6} xs={12}>
                             <img
                                 src={seo}
@@ -90,7 +93,7 @@ function SearchEngin() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Local SEO</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             Local SEO is essential for attracting local traffic to your website.
                                             It helps ensure that people in your vicinity with
                                             similar interests are suggested your products. The primary objective is to appear at the top of search results for potential nearby buyers.
@@ -106,7 +109,7 @@ function SearchEngin() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Keyword Research</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             Some users search for relevant products using specific keywords; this research allows you to dominate your domain when these keywords are used. Optimizing for relevant keywords is one of the best strategies to enhance your SEO.
                                         </Typography>
                                     </Grid>
@@ -120,7 +123,7 @@ function SearchEngin() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Backlinking</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             Backlinking drives traffic to your website from various web pages and online platforms. The more backlinks your website has, the higher it will rank in search engine results.
                                         </Typography>
                                     </Grid>
@@ -134,7 +137,7 @@ function SearchEngin() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>SEO Audits</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             SEO audits are crucial for improving search engine results, making them highly effective for online businesses. Our team, with years of experience in this field, conducts thorough research and analysis of your current website, providing a detailed breakdown to fix any issues that hinder your site's full potential.
                                         </Typography>
                                     </Grid>
@@ -144,7 +147,7 @@ function SearchEngin() {
                     </Grid>
                 </Box>
             </div>
-            <br />
+            <br /><br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
                     <center>

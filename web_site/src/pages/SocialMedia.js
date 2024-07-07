@@ -25,8 +25,8 @@ function SocialMedia() {
             }}
                 className='no-select'
             >
-                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Social Media Marketing</Typography>
+                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '10px' }}>
+                    <a href='/digitalMarketing' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Digital Marketing |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Social Media Marketing</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -44,19 +44,22 @@ function SocialMedia() {
             <br /><br /><br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
-                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>WHAT IS SOCIAL MEDIA MARKETING? </Typography>
+                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600', textAlign: 'center' }}>WHAT IS SOCIAL MEDIA MARKETING? </Typography>
                     <br />
                     <Grid container spacing={5} >
                         <Grid item md={12} xs={12} >
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '25px', xs: '18px' }, fontWeight: '500' }}>We allocate the appropriate resources to expand your social media presence.</Typography>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '35px', xs: '20px' }, fontWeight: '500', textAlign: 'center' }}>We allocate the appropriate resources to expand your social media presence.</Typography>
                             <br />
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', }}>
                                 Social media advertising allows for precise targeting of specific audiences, ensuring direct exposure to your
                                 desired market, unlike traditional TV ads. Utilizing a variety of advanced management tools, social media marketing
                                 maximizes the effectiveness of these platforms. Our team of skilled social media marketing executives is dedicated to growing
                                 your online business,managing all social media accounts efficiently, and helping you achieve your goals.
                             </Typography>
                         </Grid>
+                    </Grid>
+                    <br /><br /><br /><br />
+                    <Grid container spacing={5} >
                         <Grid item md={6} xs={12}>
                             <img
                                 src={team}
@@ -89,7 +92,7 @@ function SocialMedia() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Social marketing strategy</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             An effective social media campaign requires a strategic approach tailored to a business's unique needs. Our skilled
                                             social media executives excel at crafting these strategies, focusing on targeting and attracting the right audience.
                                             By staying updated with the latest trends, our team ensures that your business garners more traffic and engagement,
@@ -106,7 +109,7 @@ function SocialMedia() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Content development</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             We are dedicated to achieving business-oriented goals and are fully committed to your success.
                                             By leveraging technology, we enable you to start generating value quickly, ensuring a rapid and effective return on your investment.
                                         </Typography>
@@ -121,7 +124,7 @@ function SocialMedia() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Professional project management</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             Email marketing, when used correctly, is a powerful tool for increasing engagement and feedback from clients. Through our experience,
                                             we have found it to be the best way to build strong customer relationships. Our email marketing campaigns prioritize user-friendly
                                             templates and creative ideas to effortlessly connect with customers, leading to effective results.
@@ -137,7 +140,7 @@ function SocialMedia() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Effective communication</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             Our approach is tailored for remote collaborations, ensuring a seamless experience that makes us feel like an extension of your in-house team.
                                         </Typography>
                                     </Grid>

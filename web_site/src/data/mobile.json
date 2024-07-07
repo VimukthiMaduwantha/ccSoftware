@@ -2,6 +2,10 @@
     {
         "pid": "1",
         "name": "BloomMark",
-        "description": "this is for the test"
+        "intro": "The Mobile Application for the BloomMark",
+        "description": "The mobile application for Bloommark that allows users to view the daily sales of all items, as well as individual items, in a comprehensive manner. The app provides detailed sales insights and analytics by displaying the data in interactive charts. This feature enables Bloommark to monitor performance trends effectively and make informed business decisions. With this application, Bloommark can efficiently track their sales operations, ensuring they stay ahead in the competitive market and maximize their growth potential.",
+        "image1": "assets/projects/all.jpeg",
+        "image2": "assets/projects/all.jpeg",
+        "tech": "React Native, Node js, Express js, MongoDB"
     }
 ]

@@ -25,8 +25,8 @@ function GraphicDesign() {
             }}
                 className='no-select'
             >
-                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Graphic Design</Typography>
+                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '10px' }}>
+                    <a href='/digitalMarketing' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Digital Marketing |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Graphic Design</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -44,13 +44,13 @@ function GraphicDesign() {
             <br /><br /><br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
-                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>WHAT IS GRAPHIC DESIGN? </Typography>
+                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600', textAlign: 'center' }}>WHAT IS GRAPHIC DESIGN? </Typography>
                     <br />
                     <Grid container spacing={5} >
                         <Grid item md={12} xs={12} >
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '25px', xs: '18px' }, fontWeight: '500' }}>Foster a strong connection with your clients.</Typography>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '35px', xs: '20px' }, fontWeight: '500', textAlign: 'center' }}>Foster a strong connection with your clients.</Typography>
                             <br />
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', }}>
                                 Graphic design is the art and practice of creating visual content to communicate messages. Designers use typography, imagery, color, and form to
                                 craft visual representations of ideas and messages. Common applications of graphic design include branding and identity, where designers create logos,
                                 business cards, letterheads, and brand guidelines that establish a visual identity for companies and organizations. In marketing and advertising, graphic
@@ -60,6 +60,9 @@ function GraphicDesign() {
                                 involve creating animated graphics and visual effects for various media, including videos, presentations, and digital interfaces.
                             </Typography>
                         </Grid>
+                    </Grid>
+                    <br /><br /><br />
+                    <Grid container spacing={5} >
                         <Grid item md={6} xs={12}>
                             <img
                                 src={g1}
@@ -91,7 +94,7 @@ function GraphicDesign() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Event Promo Designs</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             The success of any event hinges on effective marketing and the tools utilized for promotion.
                                             We provide expertly crafted designs tailored to your event and create essential promotional materials to ensure its success.
                                         </Typography>
@@ -106,7 +109,7 @@ function GraphicDesign() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Flyer designs</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             Well-designed flyers containing relevant information can significantly boost your business. We offer high-quality printing for flyers in various sizes and shapes, including A4, A5, landscape, portrait, square, and rectangular, ensuring they leave a lasting impression on your customers.
                                         </Typography>
                                     </Grid>
@@ -120,7 +123,7 @@ function GraphicDesign() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Brochure design</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             An informative and well-designed brochure is a cornerstone of your business. We create the perfect brochures with the right color combinations and captivating designs, ensuring they are both attractive and impactful.
                                         </Typography>
                                     </Grid>
@@ -134,7 +137,7 @@ function GraphicDesign() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Web & Media design (Logo, Artworks, poster)</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             Every website needs creative visuals and ads to attract customers, such as posts, banners, e-flyers, and promotional videos. We provide innovative and unique ideas to effectively market your product.
                                         </Typography>
                                     </Grid>
@@ -144,7 +147,7 @@ function GraphicDesign() {
                     </Grid>
                 </Box>
             </div>
-            <br />
+            <br /> <br /> <br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
                     <center>

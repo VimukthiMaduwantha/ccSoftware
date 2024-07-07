@@ -23,8 +23,8 @@ function DIgitalMarketing() {
             }}
                 className='no-select'
             >
-                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Digital Marketing</Typography>
+                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '20px' }}>
+                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Digital Marketing</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -42,15 +42,20 @@ function DIgitalMarketing() {
             <br /><br /><br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
-                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>OUR APPROACH</Typography>
+                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600', textAlign: 'center' }}>OUR APPROACH</Typography>
                     <Grid container spacing={5}>
                         <Grid item md={12} xs={12} >
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '35px', xs: '39px' }, fontWeight: '500' }}>Digital Marketing</Typography>
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '52px', xs: '30px' }, fontWeight: '500', textAlign: 'center' }} >Digital Marketing</Typography>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', }}>
                                 Unlock your brand's potential with CC Software Solutions' cutting-edge digital marketing services. From SEO and content creation to social media strategy and targeted advertising,
                                 we provide tailored solutions to drive traffic, increase engagement, and boost your online presence. Let us help you reach your audience and achieve your business goals in the digital age.
                             </Typography>
                         </Grid>
+                    </Grid>
+
+                    <br /><br /><br /><br />
+
+                    <Grid container spacing={5}>
                         <Grid item md={4} xs={12} >
                             <div >
                                 <center>
@@ -299,7 +304,7 @@ function DIgitalMarketing() {
                         </Grid>
                     </Grid>
                 </Box>
-            </div>
+            </div >
 
 
 

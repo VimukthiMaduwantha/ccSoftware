@@ -24,8 +24,8 @@ function EmailMarketing() {
             }}
                 className='no-select'
             >
-                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Email Marketing</Typography>
+                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '10px' }}>
+                    <a href='/digitalMarketing' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Digital Marketing |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Email Marketing</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -43,19 +43,22 @@ function EmailMarketing() {
             <br /><br /><br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
-                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>WHAT IS EMAIL MARKETING? </Typography>
+                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600', textAlign: 'center' }}>WHAT IS EMAIL MARKETING? </Typography>
                     <br />
                     <Grid container spacing={5} >
                         <Grid item md={12} xs={12} >
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '25px', xs: '18px' }, fontWeight: '500' }}>Foster a strong connection with your clients.</Typography>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '35px', xs: '20px' }, fontWeight: '500', textAlign: 'center' }}>Foster a strong connection with your clients.</Typography>
                             <br />
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', }}>
                                 Email marketing is a digital marketing strategy that involves sending emails to prospects and customers. It is a powerful tool for fostering
                                 customer relationships, increasing engagement, and generating sales. By delivering targeted messages, promotions,
                                 and valuable content directly to the inboxes of your audience, email marketing helps businesses stay connected
                                 with their clients, drive conversions, and build brand loyalty.
                             </Typography>
                         </Grid>
+                    </Grid>
+                    <br /><br /><br /><br />
+                    <Grid container spacing={5} >
                         <Grid item md={6} xs={12}>
                             <img
                                 src={email}
@@ -89,7 +92,7 @@ function EmailMarketing() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Welcome E-Mails</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             Welcome emails are an excellent way to warmly introduce new subscribers to
                                             your community. We will craft brief and engaging emails tailored to the occasion,
                                             highlighting special offers and first-time customer discounts to build a strong connection.
@@ -105,7 +108,7 @@ function EmailMarketing() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Abandoned cart E-mails</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             These emails are designed to encourage clients to complete their purchases. Often, shoppers
                                             abandon their carts before checking out. This email serves as a reminder, helping to increase your conversion rate.
                                         </Typography>
@@ -120,7 +123,7 @@ function EmailMarketing() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Promotional E-mails</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             Our promotional campaigns are among the most effective methods to introduce new products and
                                             inform customers about the latest collections. We employ a variety of creative ideas and strategies designed to attract
                                             customers, encouraging them to visit the store or shop online.
@@ -136,7 +139,7 @@ function EmailMarketing() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Newsletter E-mails</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             Maintaining a strong relationship between customers and your business is easiest through newsletters.
                                             By signing up for weekly or monthly updates,
                                             clients stay informed about the latest happenings at their favorite store.
@@ -148,7 +151,7 @@ function EmailMarketing() {
                     </Grid>
                 </Box>
             </div>
-            <br />
+            <br /> <br /> <br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
                     <center>

@@ -24,8 +24,8 @@ function PaidSearch() {
             }}
                 className='no-select'
             >
-                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Paid Search</Typography>
+                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '10px' }}>
+                    <a href='/digitalMarketing' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Digital Marketing |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Paid Search</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -43,16 +43,19 @@ function PaidSearch() {
             <br /><br /><br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
-                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>WHAT IS PAID SEARCH? </Typography>
+                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600', textAlign: 'center' }}>WHAT IS PAID SEARCH? </Typography>
                     <br />
                     <Grid container spacing={5} >
                         <Grid item md={12} xs={12} >
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '25px', xs: '18px' }, fontWeight: '500' }}>Reaching the Right Audience with Measurable and Controllable Marketing Strategies</Typography>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '35px', xs: '20px' }, fontWeight: '500', textAlign: 'center' }}>Reaching the Right Audience with Measurable and Controllable Marketing Strategies</Typography>
                             <br />
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', }}>
                                 Paid search is a straightforward pay-per-click process. Popular search engines like Google allow advertisers to display ads on their search engine results pages, and you only pay when someone clicks on the ad.
                             </Typography>
                         </Grid>
+                    </Grid>
+                    <br /><br /><br /><br />
+                    <Grid container spacing={5} >
                         <Grid item md={6} xs={12}>
                             <img
                                 src={paidSearch1}
@@ -83,7 +86,7 @@ function PaidSearch() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Display Advertising</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             In digital marketing, display advertising functions like a digital billboard, effectively creating brand awareness among a wide audience. It's a straightforward method to reach a large number of people within your target audience.
                                         </Typography>
                                     </Grid>
@@ -97,7 +100,7 @@ function PaidSearch() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Remarketing</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             An effective way to re-engage potential customers who visited your business but didn't make a purchase is a powerful tool for boosting your conversion rates and increasing profitability.
                                         </Typography>
                                     </Grid>
@@ -111,7 +114,7 @@ function PaidSearch() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>PPC Advertising</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             One of the most effective methods to drive targeted traffic to your site is through platforms like Google Ads, including Google Shopping, and Bing Ads. At our company, we possess the expertise and technology necessary to monitor and implement these strategies effectively for your business.
                                         </Typography>
                                     </Grid>
@@ -125,7 +128,7 @@ function PaidSearch() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>PPC Audit</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             PPC campaigns should aim to achieve a respectable ROAS (Return On Ad Spend) to demonstrate success. We offer a comprehensive review of your current PPC setup, provide detailed reports, and recommend strategies to optimize your PPC budget effectively.
                                         </Typography>
                                     </Grid>
@@ -135,7 +138,7 @@ function PaidSearch() {
                     </Grid>
                 </Box>
             </div>
-            <br />
+            <br /><br /><br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
                     <center>
@@ -237,7 +240,7 @@ function PaidSearch() {
                     </Grid>
                 </Box>
             </div>
-            <br /><br />
+            <br /><br /><br />
             <Box>
                 <center>
                     <Box sx={{

@@ -27,8 +27,8 @@ function WebDev() {
             }}
                 className='no-select'
             >
-                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Web Development</Typography>
+                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '20px' }}>
+                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Web Development</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -43,17 +43,17 @@ function WebDev() {
                     </div>
                 </Box>
             </Box >
-            <br /><br /><br />
+            <br /><br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
-                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>OUR APPROACH</Typography>
-                    <Grid container spacing={2}>
+                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600', textAlign: 'center' }}>OUR APPROACH</Typography>
+                    <Grid container spacing={5}>
                         <Grid item md={12} xs={12} >
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '35px', xs: '39px' }, fontWeight: '500' }}>Web Development</Typography>
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>The modern-day world is primarily an online world; no matter the service or business you conduct, having an online website would drastically help you move forward. We develop and create websites with various options, including all services and details in a website, working smoothly to the consumer’s benefit. If you are looking for a website that will attract a crowd into your business, you have reached the right place.</Typography>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '52px', xs: '30px' }, fontWeight: '500', textAlign: 'center' }}>Web Development</Typography>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', }}>The modern-day world is primarily an online world; no matter the service or business you conduct, having an online website would drastically help you move forward. We develop and create websites with various options, including all services and details in a website, working smoothly to the consumer’s benefit. If you are looking for a website that will attract a crowd into your business, you have reached the right place.</Typography >
                         </Grid>
                         <Grid item md={12} xs={12}>
-                            <Grid container spacing={2}>
+                            <Grid container spacing={5}>
                                 <Grid item md={4} xs={12} >
                                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <img
@@ -66,7 +66,7 @@ function WebDev() {
                                         <h3 style={{ color: 'black', }}>React js</h3>
                                     </div>
                                     <div >
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '10px' }}>
                                             React JS is crucial for web development due to its component-based architecture, enabling reusable and maintainable UI components. The virtual DOM enhances performance by optimizing updates. Its declarative syntax simplifies UI state management, making code more predictable and debuggable. A robust ecosystem with extensive libraries and tools further accelerates development.
                                         </Typography>
                                     </div>
@@ -83,7 +83,7 @@ function WebDev() {
                                         <h3 style={{ color: 'black', }}>Node js</h3>
                                     </div>
                                     <div >
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '10px' }}>
                                             Node.js is vital for web development, enabling server-side scripting with JavaScript, thus unifying client and server-side coding. Its non-blocking, event-driven architecture ensures high performance and scalability. With a robust npm ecosystem, it simplifies development tasks. Node.js excels in handling real-time data, making it ideal for chat services and live updates in modern web applications.
                                         </Typography>
                                     </div>
@@ -101,7 +101,7 @@ function WebDev() {
                                     </div>
 
                                     <div >
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '10px' }}>
                                             MongoDB is vital for web development due to its flexible schema, which allows for rapid iteration and handling of unstructured data. Its scalability and performance make it suitable for large-scale applications. As a NoSQL database, MongoDB supports JSON-like documents, simplifying data integration with JavaScript-based technologies like Node.js, making it an ideal choice for modern, dynamic web applications.
                                         </Typography>
                                     </div>
@@ -129,7 +129,7 @@ function WebDev() {
                         </Grid>
                         <Grid item md={7} xs={12}>
                             <h2 style={{ color: 'black', }}>Find The Best Team For Your Next Project</h2>
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'start', marginTop: '10px' }}>
                                 At our web development team, we take a distinctive approach, setting us apart from the regular firms. We believe in forming a strong
                                 partnership with our clients, providing the best tech solutions to transform your business. Our future-oriented mindset ensures that
                                 the websites we create are not only effective today but also ready to meet tomorrow's challenges. With our highly skilled team, we adopt a
@@ -150,7 +150,7 @@ function WebDev() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Reliability</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px' }}>
                                             We utilize both custom and standard software development processes to efficiently deliver IT projects within defined parameters.
                                         </Typography>
                                     </Grid>
@@ -167,7 +167,7 @@ function WebDev() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Delivery mindset</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px' }}>
                                             We focus on business-oriented goals and are committed to delivering top-quality products and services using cutting-edge technology for our customers.
                                         </Typography>
                                     </Grid>
@@ -184,7 +184,7 @@ function WebDev() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Delivery mindset</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px' }}>
                                             We place our projects in the capable hands of experienced and qualified software project managers to ensure exceptional outcomes.
                                         </Typography>
                                     </Grid>
@@ -201,7 +201,7 @@ function WebDev() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Effective communication</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px' }}>
                                             We maintain close communication with our clients, keeping them updated and following all their instructions.
                                         </Typography>
                                     </Grid>
@@ -218,7 +218,7 @@ function WebDev() {
                         <Grid item md={12} xs={12}>
                             <center>
                                 <h2 style={{ color: 'black', }}>Why You Should Work With Us</h2>
-                                <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '10px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                                <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '10px' }}>
                                     At our web development team, we take a distinctive approach, setting us apart from the regular firms. We believe in forming a strong
                                     partnership with our clients, providing the best tech solutions to transform your business. Our future-oriented mindset ensures that
                                     the websites we create are not only effective today but also ready to meet tomorrow's challenges. With our highly skilled team, we adopt a
@@ -241,7 +241,7 @@ function WebDev() {
                             </div>
                             <br />
                             <h3 style={{ textAlign: 'center' }}>Skilled, hierarchical organization</h3>
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '5px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '5px' }}>
                                 producing and overseeing every project constantly through professional technicians.
                             </Typography>
                         </Grid>
@@ -256,7 +256,7 @@ function WebDev() {
                             </div>
                             <br />
                             <h3 style={{ textAlign: 'center' }}>Cloud And Serverless Experience</h3>
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '5px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '5px' }}>
                                 Delivering high-performance software of exceptional quality at an affordable price.
                             </Typography>
                         </Grid>
@@ -271,7 +271,7 @@ function WebDev() {
                             </div>
                             <br />
                             <h3 style={{ textAlign: 'center' }}>Newest Trends In Practice</h3>
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '5px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '5px' }}>
                                 Latest methods and practices being implemented in current industry trends.
                             </Typography>
                         </Grid>
@@ -286,7 +286,7 @@ function WebDev() {
                             </div>
                             <br />
                             <h3 style={{ textAlign: 'center' }}>Battle-Tested Process</h3>
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '5px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '5px' }}>
                                 Equipping you with the right tools to thrive in today's market.
                             </Typography>
                         </Grid>
@@ -301,7 +301,7 @@ function WebDev() {
                             </div>
                             <br />
                             <h3 style={{ textAlign: 'center' }}>Team scaling assistance</h3>
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '5px' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', marginTop: '5px' }}>
                                 Scale your team swiftly as needed.
                             </Typography>
                         </Grid>

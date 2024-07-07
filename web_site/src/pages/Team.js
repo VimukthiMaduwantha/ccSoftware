@@ -20,8 +20,8 @@ function Team() {
             }}
                 className='no-select'
             >
-                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Our Team</Typography>
+                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '20px' }}>
+                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Our Team</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -33,20 +33,21 @@ function Team() {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontSize: { md: '6vw', xs: '40px' }, }}>Our Team</Typography>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <HuneyComb />
+                        {/* <HuneyComb /> */}
                     </div>
                 </Box>
             </Box >
-            <Box>
-                <div style={{ padding: '20px' }}>
+            <br /><br /><br />
+            <Box sx={{ display: 'flex', justifyContent: { md: 'center' } }}>
+                <div style={{ padding: '20px', width: '80vw', }}>
                     <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", fontSize: { md: '17px', xs: '15px' }, fontWeight: '600' }}>Experience. Talent. Unity.</Typography>
-                    <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontSize: { md: '52px', xs: '15px' } }}>Meet the experties in the industry</Typography>
+                    <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontSize: { md: '52px', xs: '25px' } }}>Meet the experties in the industry</Typography>
                 </div>
             </Box>
-
+            <br /><br /><br />
             <center>
                 <Box sx={{ width: '80vw' }} >
-                    <Grid container spacing={3}>
+                    <Grid container spacing={5}>
                         {teamMembers.map((e, i) => (
                             <Grid item md={3} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
                                 <div /* style={{ overflow: 'hidden' }} */>
@@ -65,7 +66,7 @@ function Team() {
                     </Grid>
                 </Box>
             </center >
-            <br />
+            <br /><br /><br /><br /><br /><br /><br />
             <Box >
                 <center>
                     <Box sx={{

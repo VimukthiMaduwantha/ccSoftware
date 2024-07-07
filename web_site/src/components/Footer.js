@@ -24,8 +24,8 @@ function Footer() {
     }, []);
     return (
         <>
-            <Box sx={{ height: '100%', background: 'black', padding: '10px' }}>
-                <Grid container spacing={2}>
+            <Box sx={{ height: '100%', background: 'black', padding: '30px 10px 10px 10px' }}>
+                <Grid container spacing={4}>
                     <Grid item md={4} xs={12} sx={{ display: { md: 'flex', xs: 'none' }, justifyContent: 'center', alignItems: 'center' }}>
                         <div>
                             <img
@@ -46,9 +46,9 @@ function Footer() {
                             </Typography>
                         </div>
                     </Grid>
-                    <Grid item md={4} xs={6} sx={{ display: 'flex', justifyContent: 'center' }}>
+                    <Grid item md={4} xs={8} sx={{ display: 'flex', justifyContent: 'center' }}>
                         <div>
-                            <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", fontSize: '20px' }}>Connect With Us</Typography>
+                            {/* <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif" }}>Connect With Us</Typography> */}
                             <Box sx={{ marginTop: '2vh' }}>
                                 <div style={{ display: 'flex', justifyContent: 'start', alignItems: 'center', }}>
                                     <div>
@@ -73,11 +73,11 @@ function Footer() {
                             </Box>
                         </div>
                     </Grid>
-                    <Grid item md={4} xs={6} sx={{ display: { md: 'none', xs: 'flex' }, justifyContent: 'center', alignItems: 'center' }}>
+                    <Grid item md={4} xs={4} sx={{ display: { md: 'none', xs: 'flex' }, justifyContent: 'center', alignItems: 'center' }}>
                         <div>
                             <img
                                 src={logo}
-                                height='80px'
+                                height='75px'
                                 width='auto'
                                 alt='footerLogo'
                             />
@@ -106,7 +106,7 @@ function Footer() {
                 <hr style={{ opacity: '0.5' }} />
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Typography sx={{ color: 'white', fontFamily: "Montserrat, sans-serif", opacity: '0.7', fontSize: { md: '13px', xs: '12px' } }}>
-                        © 2024.All Rights Reserved by CC Software Solutions.
+                        Copyright © 2024 <b>CC Software Solutions</b> All Rights Reserved
                     </Typography>
                 </div>
             </Box >
