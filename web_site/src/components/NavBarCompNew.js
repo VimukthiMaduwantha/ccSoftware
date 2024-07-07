@@ -33,7 +33,7 @@ function NavBarCompNew() {
                     <div className={`dropdown-menu ${isDropdownOpen && "open"}`}>
                         <a href="/webDevelopment">Web Development</a>
                         <a href="/mobileDevelopment">Mobile Development</a>
-                        <a href="/digitalMarketing">Product Design</a>
+                        <a href="/productDesign">Product Design</a>
                         <a href="/digitalMarketing">Digital Marketing</a>
                     </div>
                 </div>

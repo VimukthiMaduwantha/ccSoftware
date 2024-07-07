@@ -8,19 +8,19 @@
     {
         "mID": "2",
         "name": "Vimukthi Maduwantha",
-        "image": "assets/pPic/me.jpg",
+        "image": "assets/pPic/vimukthi.jpg",
         "position": "Software Engineer"
     },
     {
         "mID": "3",
-        "name": "Pasindu Sankalpa",
-        "image": "assets/pPic/sankalpa.PNG",
+        "name": "Kavinda Sandaruwan",
+        "image": "assets/pPic/bere.jpeg",
         "position": "Software Engineer"
     },
     {
         "mID": "4",
-        "name": "Kavinda Sandaruwan",
-        "image": "assets/pPic/bere.PNG",
+        "name": "Dinuka Sajith",
+        "image": "assets/pPic/dinuka.jpeg",
         "position": "Software Engineer"
     },
     {
@@ -31,24 +31,18 @@
     },
     {
         "mID": "6",
-        "name": "Dinuka Sajith",
-        "image": "assets/pPic/dinuka.jpg",
-        "position": "Software Engineer"
-    },
-    {
-        "mID": "7",
         "name": "Chandula Nanayakkara",
-        "image": "assets/pPic/chandula.jpg",
+        "image": "assets/pPic/chan.jpeg",
         "position": "UI/UX Engineer"
     },
     {
-        "mID": "8",
+        "mID": "7",
         "name": "Tharush Senanayake",
         "image": "assets/pPic/tharush.PNG",
         "position": "Network Engineer"
     },
     {
-        "mID": "9",
+        "mID": "8",
         "name": "Pasindu Deshan",
         "image": "assets/pPic/lokka.jpg",
         "position": "Cyber Security Engineer"

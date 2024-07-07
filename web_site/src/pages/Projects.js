@@ -4,6 +4,7 @@ import projects from '../images/projects.jpg'
 import pos from "../data/pos.json";
 import mobile from "../data/mobile.json";
 import DialogComponent from '../components/DialogComponent';
+import webTik from '../images/tik.png'
 
 
 function Projects() {
@@ -28,8 +29,8 @@ function Projects() {
             }}
                 className='no-select'
             >
-                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Projects</Typography>
+                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '20px' }}>
+                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Projects</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -57,23 +58,29 @@ function Projects() {
                 justifyContent: 'center',
                 // borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))',
             }} >
-                <Box sx={{ width: { xs: '97%', md: '100%' }, padding: '10px', }}>
+                <Box sx={{ width: { xs: '97%', md: '80%' }, padding: '10px', }}>
+                    <Box sx={{ padding: '10px', display: 'flex' }}>
+                        <img
+                            src={webTik}
+                            height='30px'
+                            width='auto'
+                            alt='teamWeb'
+                        />
+                        &nbsp; &nbsp;
+                        <h2 style={{ color: 'black', opacity: '0.9' }}>Point Of Sale Systems </h2>
+                    </Box>
+                    <br />
                     <Grid container spacing={5}  >
-                        <Grid sx={{ display: 'flex', justifyContent: 'flex-start', }} item md={12} xs={12}>
-                            <Box sx={{ padding: '10px' }}>
-                                <h1 style={{ color: 'black', opacity: '0.9' }}>Point Of Sale Systems </h1>
-                            </Box>
-                        </Grid>
                         {pos.map((data, i) => (
                             <Grid item md={4} xs={12} >
                                 <div class="card">
                                     <div class="card-details">
-                                        <div style={{ display: 'flex', justifyContent: 'center', height: '165px' }}>
+                                        <div style={{ display: 'flex', justifyContent: 'center', height: '210px' }}>
                                             <img
                                                 src={data.image1}
-                                                height='150px'
+                                                height='190px'
                                                 width='100%'
-
+                                                alt='project'
                                             />
                                         </div>
                                         <div style={{ overflow: 'hidden', paddingBottom: '15px' }}>
@@ -93,7 +100,6 @@ function Projects() {
 
             {/* Mobile Apps */}
             <div style={{
-                // backgroundImage: `url(${homeBack})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
@@ -102,31 +108,37 @@ function Projects() {
                 justifyContent: 'center',
                 // borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))',
             }} >
-                <Box sx={{ width: { xs: '97%', md: '100%' }, padding: '10px', }}>
+                <Box sx={{ width: { xs: '97%', md: '80%' }, padding: '10px', }}>
+                    <Box sx={{ padding: '10px', display: 'flex' }}>
+                        <img
+                            src={webTik}
+                            height='30px'
+                            width='auto'
+                            alt='teamWeb'
+                        />
+                        &nbsp; &nbsp;
+                        <h2 style={{ color: 'black', opacity: '0.9' }}>Mobile Applications</h2>
+                    </Box>
+                    <br />
                     <Grid container spacing={5}  >
-                        <Grid sx={{ display: 'flex', justifyContent: 'flex-start', }} item md={12} xs={12}>
-                            <Box sx={{ padding: '10px' }}>
-                                <h1 style={{ color: 'black', opacity: '0.9' }}>Mobile Applications </h1>
-                            </Box>
-                        </Grid>
                         {mobile.map((data, i) => (
                             <Grid item md={4} xs={12} >
                                 <div class="card">
                                     <div class="card-details">
-                                        <div style={{ display: 'flex', justifyContent: 'center', height: '165px' }}>
+                                        <div style={{ display: 'flex', justifyContent: 'center', height: '210px' }}>
                                             <img
-                                                src={data.image}
-                                                height='150px'
+                                                src={data.image1}
+                                                height='190px'
                                                 width='100%'
-
+                                                alt='project'
                                             />
                                         </div>
                                         <div style={{ overflow: 'hidden', paddingBottom: '15px' }}>
                                             <p class="text-title">{data.name}</p>
-                                            <p class="text-body">{data.description}</p>
+                                            <p class="text-body">{data.intro}</p>
                                         </div>
                                     </div>
-                                    {/* <button class="card-button" onClick={() => MoreInfo(data)}>More info</button> */}
+                                    <button class="card-button" onClick={() => MoreInfoPos(data)}>More info</button>
                                 </div>
                             </Grid>
                         ))}

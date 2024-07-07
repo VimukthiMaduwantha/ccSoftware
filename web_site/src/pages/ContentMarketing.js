@@ -25,8 +25,8 @@ function ContentMarketing() {
             }}
                 className='no-select'
             >
-                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '1vw' }}>
-                    <a href='/' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Home |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>Content Marketing</Typography>
+                <div style={{ display: 'flex', justifyContent: 'start', paddingTop: '3vh', paddingLeft: '10px' }}>
+                    <a href='/digitalMarketing' style={{ textDecoration: 'none', }}><Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Digital Marketing |</Typography></a>&nbsp;<Typography sx={{ color: '#4DBEE9', fontFamily: "Montserrat, sans-serif", fontWeight: '600', fontSize: { xs: '13px', md: '16px' } }}>Content Marketing</Typography>
                 </div>
                 <Box sx={{
                     height: { md: 'calc(53vh - 80px)', xs: '30vh' },
@@ -44,16 +44,19 @@ function ContentMarketing() {
             <br /><br /><br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
-                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600' }}>WHAT IS CONTENT MARKETING? </Typography>
+                    <Typography sx={{ color: '#B85EB3', fontFamily: "Montserrat, sans-serif", opacity: '0.8', fontWeight: '600', textAlign: 'center' }}>WHAT IS CONTENT MARKETING? </Typography>
                     <br />
                     <Grid container spacing={5} >
                         <Grid item md={12} xs={12} >
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '25px', xs: '18px' }, fontWeight: '500' }}>Creative Approaches and Tactics to Draw in Customers.</Typography>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', fontSize: { md: '35px', xs: '20px' }, fontWeight: '500', textAlign: 'center' }}>Creative Approaches and Tactics to Draw in Customers.</Typography>
                             <br />
-                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify' /* fontSize: { md: '40px', xs: '39px' }, fontWeight: '500' */ }}>
+                            <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'center', }}>
                                 Content marketing involves engaging with your audience by creating and distributing relevant articles, posts, videos, and other media across various platforms. This strategy helps increase brand awareness and drive sales by connecting with customers in a meaningful and informative way.
                             </Typography>
                         </Grid>
+                    </Grid>
+                    <br /><br /><br /><br />
+                    <Grid container spacing={5} >
                         <Grid item md={6} xs={12}>
                             <img
                                 src={content1}
@@ -84,7 +87,7 @@ function ContentMarketing() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Content creation</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             Eye-catching content provides numerous benefits. At Envision Circle, our experienced designers create captivating content for your social media and websites, keeping your clients engaged and interested in your business.
                                         </Typography>
                                     </Grid>
@@ -98,7 +101,7 @@ function ContentMarketing() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Copywriting</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             Effective communication with your customers is crucial for any business. Our professional copywriters at EC thoroughly research the market to craft content that tells your story and builds a unique connection between your business and your customers.
                                         </Typography>
                                     </Grid>
@@ -112,7 +115,7 @@ function ContentMarketing() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Content Audit</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             Engaging and well-crafted content attracts more people to your business. Conducting a content audit is a crucial SEO tactic that helps analyze the tone of voice across your business or website.
                                         </Typography>
                                     </Grid>
@@ -126,7 +129,7 @@ function ContentMarketing() {
                                     </Grid>
                                     <Grid item md={11} xs={11}>
                                         <h4>Content Optimization</h4>
-                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { md: '13px', xs: '12px' }, fontWeight: '500' }}>
+                                        <Typography sx={{ fontFamily: "Montserrat, sans-serif", color: 'black', textAlign: 'justify', marginTop: '10px', fontSize: { xs: '12px', md: '16px' }, fontWeight: '500' }}>
                                             This process ensures your content attracts the right audience. It aids in keyword research, and when done correctly, it results in increased organic search traffic and consistent repeat visitors.
                                         </Typography>
                                     </Grid>
@@ -136,7 +139,7 @@ function ContentMarketing() {
                     </Grid>
                 </Box>
             </div>
-            <br />
+            <br /> <br /> <br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
                     <center>

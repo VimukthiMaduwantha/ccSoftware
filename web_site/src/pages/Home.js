@@ -1,17 +1,11 @@
 import React, { useEffect } from 'react'
-import logo from '../images/theme.svg'
 import { Box, Card, Grid, Typography } from '@mui/material'
 import BackgroundImage from '../components/BackgroundImage'
 import back1 from '../images/tm.jpg'
 import back2 from '../images/whiteBack.jpg'
-// import back2 from '../images/huji23.jpg'
-import menu from '../images/n.png'
 import bloommark from '../images/bloommark.png'
 import menuLogo from '../images/Menu.png'
 import theliElla from '../images/Theli Ella.png'
-// import homeBack from '../images/whiteDark.jpg'
-import homeBack from '../images/white-cube.jpg'
-// import homeBack from '../images/homeBack.jpg'
 import web from '../images/cloud.png'
 import react from '../images/react.png'
 import node from '../images/nodeLogo.png'
@@ -20,6 +14,7 @@ import mobile from '../images/mobileLogo.png'
 import ui from '../images/ui.png'
 import dMarketing from '../images/dMarketing.png'
 import electronJS from '../images/electronJS.png'
+import database from '../images/database.png'
 import Marquee from 'react-fast-marquee'
 
 
@@ -29,6 +24,7 @@ function Home() {
             <div>
                 <BackgroundImage />
             </div>
+            <br /><br /><br />
             <div className='section'
                 style={{
                     // backgroundImage: `url(${homeBack})`,
@@ -194,15 +190,15 @@ function Home() {
                                         }}
                                     >
                                         <img
-                                            src={mongoDB}
+                                            src={react}
                                             height='50%'
                                             width='auto'
                                             style={{ display: 'flex', justifyContent: 'center' }}
                                             alt='mongoDB'
                                         />
                                         <br />
-                                        <h3 style={{ color: 'black', }}>MongoDB</h3>
-                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Popular NoSQL database known for its flexibility and scalability.</Typography>
+                                        <h3 style={{ color: 'black', }}>React Native</h3>
+                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>"Create high-quality, cross-platform mobile apps using React Native framework."</Typography>
                                     </Card>
                                 </Grid>
                                 <Grid item md={4} xs={12}>
@@ -220,15 +216,15 @@ function Home() {
                                         }}
                                     >
                                         <img
-                                            src={mongoDB}
+                                            src={database}
                                             height='50%'
                                             width='auto'
                                             style={{ display: 'flex', justifyContent: 'center' }}
                                             alt='mongoDB'
                                         />
                                         <br />
-                                        <h3 style={{ color: 'black', }}>MongoDB</h3>
-                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Popular NoSQL database known for its flexibility and scalability.</Typography>
+                                        <h3 style={{ color: 'black', }}>Sqlite</h3>
+                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Lightweight, self-contained SQL database engine for embedded and mobile applications.</Typography>
                                     </Card>
                                 </Grid>
                             </Grid>
@@ -322,23 +318,22 @@ function Home() {
                 {/* Technological stack end */}
             </div >
             <br />
-
             <div style={{
-                // backgroundImage: `url(${homeBack})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
                 height: '100%',
                 display: 'flex',
                 justifyContent: 'center',
-                // borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))',
+                marginTop: '80px',
+                padding: '0 20px'
             }} >
                 <Box sx={{ width: { xs: '97%', md: '80%' }, padding: '10px', /* background: 'red' */ }}>
                     <center>
                         <Typography sx={{ fontSize: { md: '3vh', xs: '1.4vh' }, color: 'black', opacity: '0.9', fontFamily: 'Montserrat, sans-serif', }}>BUILD YOUR DREAM INTO REALITY</Typography>
                         <Typography sx={{ fontSize: { md: '5vh', xs: '2.5vh' }, color: 'black', opacity: '0.9', fontWeight: 'bold', fontFamily: 'Montserrat, sans-serif', }}>How We Manage Your Aspiring Projects</Typography>
                     </center>
-                    <Grid container spacing={2} /* sx={{ background: 'red' }} */>
+                    <Grid container spacing={5} /* sx={{ background: 'red' }} */>
                         <Grid item md={5} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             <img
                                 src={mobile}
@@ -350,17 +345,17 @@ function Home() {
                         <Grid sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} item md={7} xs={12}>
                             <Box /* sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} */>
                                 <center>
-                                    <h1 style={{ color: 'black', opacity: '0.9' }}>Organizing Your Business Needs</h1>
+                                    <Typography sx={{ fontSize: { md: '3.5vh', xs: '2.5vh' }, color: 'black', opacity: '0.9', fontWeight: 'bold', fontFamily: 'Montserrat, sans-serif', }}>Organizing Your Business Needs</Typography>
                                     <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', opacity: '0.9' }}>We are attentive to every possible detail about your business, and we analyze it carefully to understand your business requirements to deliver the best result.</Typography>
                                 </center>
                                 <br />
                                 <center>
-                                    <h1 style={{ color: 'black', opacity: '0.9' }}>Conducting Tests & Overseeing</h1>
+                                    <Typography sx={{ fontSize: { md: '3.5vh', xs: '2.5vh' }, color: 'black', opacity: '0.9', fontWeight: 'bold', fontFamily: 'Montserrat, sans-serif', }}>Conducting Tests & Overseeing</Typography>
                                     <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', opacity: '0.9' }}>We run multiple tests to assure the product’s quality and keep an informed report to measure the progress.</Typography>
                                 </center>
                                 <br />
                                 <center>
-                                    <h1 style={{ color: 'black', opacity: '0.9' }}>Ready To Go Live</h1>
+                                    <Typography sx={{ fontSize: { md: '3.5vh', xs: '2.5vh' }, color: 'black', opacity: '0.9', fontWeight: 'bold', fontFamily: 'Montserrat, sans-serif', }}>Ready To Go Live</Typography>
                                     <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', opacity: '0.9' }}>Since the launch of your project, we constantly check for any bugs or issues and provide services and maintenance to make sure the project works smoothly.</Typography>
                                 </center>
                             </Box>
@@ -369,7 +364,7 @@ function Home() {
                 </Box>
             </div>
             {/* features stack end */}
-
+            <br /><br /><br />
             {/* Client details start */}
             <Box
                 sx={{
@@ -395,7 +390,7 @@ function Home() {
                     </Typography>
                     <br />
                     <Box sx={{ width: '100%' }}>
-                        <Marquee pauseOnHover>
+                        <Marquee /* pauseOnHover */>
                             <div className='imageWrapper'>
                                 <img src={menuLogo} alt='' />
                             </div>

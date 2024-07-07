@@ -48,8 +48,7 @@ function BackgroundImage() {
                                     fontFamily: "Kanit, sans-serif",
                                     fontWeight: '500',
                                     fontStyle: 'normal',
-                                }}
-                            >CC Software Solutions</Typography>
+                                }} >CC Software Solutions</Typography>
                             <Typography
                                 sx={{
                                     paddingLeft: { md: '20px', xs: 'none' },
@@ -68,7 +67,7 @@ function BackgroundImage() {
                                 cost-effective, and future-proof IT solutions.
                             </Typography>
                             <br />
-                            <div className='btn-container'>
+                            <div className='btn-container' style={{ display: 'flex', justifyContent: 'center' }}>
                                 <button className="btn"><i className="animation"></i><a href='/aboutus' style={{ fontFamily: "Montserrat, sans-serif", textDecoration: 'none', color: 'black', cursor: 'pointer', fontSize: '13px' }}>Read More About Us</a><i className="animation"></i></button>
                             </div>
                         </div>

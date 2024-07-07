@@ -16,17 +16,16 @@ body {
 
 /* customized scroll bar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.5);
   opacity: o.5;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #B85EB3;
-  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
