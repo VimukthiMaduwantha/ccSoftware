@@ -37,10 +37,10 @@ function PrductDesign() {
                     </div>
                 </Box>
             </Box >
-            <br /><br />
+            <br /><br /><br />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box sx={{ width: { xs: '97%', md: '88%' }, padding: '30px' }}>
-                    <div style={{ borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))', }}>
+                    <div style={{ borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))', padding: "15px", borderRadius: '28px' }}>
                         <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontSize: { md: '2.3vw', xs: '20px' }, fontWeight: 'bold', textAlign: 'center' }}>Create Cutting-Edge User Experiences for Your Digital Products</Typography>
                         <Typography sx={{ color: 'black', fontFamily: "Montserrat, sans-serif", fontSize: { md: '2vw', xs: '19px' }, fontWeight: '400', textAlign: 'center' }}>Developed for Exclusive Partnerships</Typography>
                     </div>
