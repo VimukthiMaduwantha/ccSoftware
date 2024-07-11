@@ -16,6 +16,7 @@ import dMarketing from '../images/dMarketing.png'
 import electronJS from '../images/electronJS.png'
 import database from '../images/database.png'
 import Marquee from 'react-fast-marquee'
+import sucess from '../images/success.jfif'
 
 
 function Home() {
@@ -191,14 +192,14 @@ function Home() {
                                     >
                                         <img
                                             src={react}
-                                            height='50%'
+                                            height='40%'
                                             width='auto'
                                             style={{ display: 'flex', justifyContent: 'center' }}
                                             alt='mongoDB'
                                         />
                                         <br />
                                         <h3 style={{ color: 'black', }}>React Native</h3>
-                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>"Create high-quality, cross-platform mobile apps using React Native framework."</Typography>
+                                        <Typography sx={{ fontFamily: 'Montserrat, sans-serif', color: 'black', fontWeight: '500', opacity: '0.9', textAlign: 'center', fontSize: { md: '12px' }, display: { md: 'contents', xs: 'none' } }}>Create high-quality, cross-platform mobile apps using React Native framework.</Typography>
                                     </Card>
                                 </Grid>
                                 <Grid item md={4} xs={12}>
@@ -217,7 +218,7 @@ function Home() {
                                     >
                                         <img
                                             src={database}
-                                            height='50%'
+                                            height='40%'
                                             width='auto'
                                             style={{ display: 'flex', justifyContent: 'center' }}
                                             alt='mongoDB'
@@ -333,13 +334,18 @@ function Home() {
                         <Typography sx={{ fontSize: { md: '3vh', xs: '1.4vh' }, color: 'black', opacity: '0.9', fontFamily: 'Montserrat, sans-serif', }}>BUILD YOUR DREAM INTO REALITY</Typography>
                         <Typography sx={{ fontSize: { md: '5vh', xs: '2.5vh' }, color: 'black', opacity: '0.9', fontWeight: 'bold', fontFamily: 'Montserrat, sans-serif', }}>How We Manage Your Aspiring Projects</Typography>
                     </center>
+                    <br /><br /><br />
                     <Grid container spacing={5} /* sx={{ background: 'red' }} */>
                         <Grid item md={5} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             <img
-                                src={mobile}
-                                height='50%'
-                                width='auto'
-                                alt='service'
+                                src={sucess}
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    aspectRatio: 3 / 2,
+                                    objectFit: 'cover'
+                                }}
+                                alt='success'
                             />
                         </Grid>
                         <Grid sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} item md={7} xs={12}>
