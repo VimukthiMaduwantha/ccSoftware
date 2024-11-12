@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react'
-// import logo from '../images/theme.svg'
-import back from '../images/original.png'
-// import logo from '../images/CCback.jpg'
 import logo from '../images/redBack.jpg'
-// import logo from '../images/whiteBack.jpg'
-// import logo from '../images/cccBack.jpg'
+import logo1 from '../images/redBack1.jpg'
 import { Box, Grid, Typography } from '@mui/material'
 
 function BackgroundImage() {
@@ -23,12 +19,13 @@ function BackgroundImage() {
         <>
             <Box sx={{
                 height: { md: 'calc(100vh - 80px)', xs: 'auto' },
+                width: '100%',
                 paddingTop: { md: 'none', xs: '2vh' },
                 paddingBottom: { md: 'none', xs: '2vh' },
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                backgroundImage: `url(${logo})`,
+                backgroundImage: { md: `url(${logo})`, xs: `url(${logo1})` },
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
@@ -46,7 +43,6 @@ function BackgroundImage() {
                                     fontWeight: 'bold',
                                     color: 'black',
                                     fontFamily: "Kanit, sans-serif",
-                                    fontWeight: '500',
                                     fontStyle: 'normal',
                                 }} >CC Software Solutions</Typography>
                             <Typography
@@ -57,7 +53,7 @@ function BackgroundImage() {
                                     fontFamily: "Montserrat, sans-serif",
                                     fontOpticalSizing: 'auto',
                                     fontStyle: 'normal',
-                                    fontWeight: '500',
+                                    fontWeight: '600',
                                     textAlign: 'center'
                                 }}
                             >
@@ -68,7 +64,7 @@ function BackgroundImage() {
                             </Typography>
                             <br />
                             <div className='btn-container' style={{ display: 'flex', justifyContent: 'center' }}>
-                                <button className="btn"><i className="animation"></i><a href='/aboutus' style={{ fontFamily: "Montserrat, sans-serif", textDecoration: 'none', color: 'black', cursor: 'pointer', fontSize: '13px' }}>Read More About Us</a><i className="animation"></i></button>
+                                <button className="btn"><i className="animation"></i><a href='/aboutus' style={{ fontFamily: "Montserrat, sans-serif", textDecoration: 'none', color: 'black', cursor: 'pointer', fontSize: '15px' }}>Read More About Us</a><i className="animation"></i></button>
                             </div>
                         </div>
                     </Grid>
